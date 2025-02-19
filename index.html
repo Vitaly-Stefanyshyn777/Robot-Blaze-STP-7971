@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg" href="/Jewel-Queen/assets/favicons 2-1636c721.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  
+  <title>Robot Blaze</title>
+  <script type="module" crossorigin src="/Jewel-Queen/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/Jewel-Queen/assets/vendor-a2f39585.js">
+  <link rel="stylesheet" href="/Jewel-Queen/assets/vendor-15e0163c.css">
+  <link rel="stylesheet" href="/Jewel-Queen/assets/styles-ce8f8604.css">
+</head>
+
+<body>
+  <!-- <header class="container header">
+  <div class="header-wraper">
+    <nav class="header-list-wraper">
+      <ul class="header-list">
+        <li class="header-list-item">
+          <div class="header-logo-wraper">
+            <a href="./index.html">
+              <img src="./img/header-img/logo.png" alt="logo" class="header-logo" width="55" height="55" />
+            </a>
+          </div>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-link" href="./index.html">Home</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-link" href="#about-game">About game</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-link" href="#adventages">Adventages</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-link" href="#reviews-section">Reviews</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-link" href="#How-to-Play">How to play</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-btn-wraper">
+      <button class="header-btn-burger js-open-menu cordinate">
+        <svg class="header-burger-img" width="30" height="30">
+          <use href="./img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header> -->
+<!-- 
+<header class="container header">
+  <div class="header-wraper">
+    <div class="header-logo-wraper">
+      <a href="./index.html"><img src="./img/header-img/logo.png" alt="logo" class="header-logo" width="55"
+          height="55" />
+      </a>
+      <nav class="header-list-wraper">
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a class="header-list-link" href="./index.html">Home</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="#gallery-section">Gallery</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="#about-us-section">About Us</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="#reviews-section">Reviews</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="#features-section">Features</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-btn-wraper">
+      <button class="header-btn-burger js-open-menu cordinate">
+        <svg class="header-burger-img" width="30" height="30">
+          <use href="./img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header> -->
+
+<header class="container header">
+  <div class="header-wraper">
+    <!-- Логотип окремо від навігації -->
+    <div class="header-logo-wraper">
+      <a href="./index.html">
+        <img src="/Jewel-Queen/assets/logo-c5cbb670.png" alt="logo" class="header-logo" width="55" height="55" />
+      </a>
+    </div>
+
+    <!-- Навігація для десктопу -->
+    <nav class="header-list-wraper">
+      <ul class="header-list">
+        <li class="header-list-item"><a href="./index.html">Home</a></li>
+        <li class="header-list-item"><a href="#about-game">About game</a></li>
+        <li class="header-list-item"><a href="#adventages">Adventages</a></li>
+        <li class="header-list-item"><a href="#reviews-section">Reviews</a></li>
+        <li class="header-list-item"><a href="#How-to-Play">How to play</a></li>
+      </ul>
+    </nav>
+
+    <!-- Кнопка бургера для мобільної версії -->
+    <div class="header-btn-wraper">
+      <button class="header-btn-burger js-open-menu">
+        <svg class="header-burger-img" width="30" height="30">
+          <use href="/Jewel-Queen/assets/sprite-640aaf09.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+  <div class="hero-wrapper container">
+    <div class="gradient"></div>
+    <div class="hero-text-button-container">
+      <h1 class="hero-title">Robot Blaze dash adventure </h1>
+      <p class="hero-text">
+        Dash Through the Future!
+      </p>
+      <a class="download-button" id="display-none" aria-label="Download Jewel Queen on Google Play"
+        href="https://play.google.com/store/apps/details?id=com.mobowl.JewelQueen.google"><img class="btn-icon"
+          src="/Jewel-Queen/assets/google_download-16729ab1.svg" alt="google play logo" />
+        <p>
+          <span class="btn-text-small">Download on</span>
+          <span class="btn-text-big">Google Play</span>
+        </p>
+      </a>
+    </div>
+    <img class="hero-image" srcset="/Jewel-Queen/assets/Exclude-e0e4788c.png 1x, /Jewel-Queen/assets/Exclude-e0e4788c.png 2x" src="/Jewel-Queen/assets/Exclude-e0e4788c.png" alt="Jewel Queen game displayed on an iPhone screen" width="599px"
+      height="443px" />
+  </div>
+</section>
+    <!--  Gallery section -->
+    <section class="gallery" id="about-game">
+  <div class="container gallery-container">
+    <h2 class="title">About game</h2>
+    <div class="gellary-swiper-container">
+      <button class="reviews-btn" id="gallery-btn-prev" type="button">
+        <svg class="review-svg" width="24" height="24">
+          <use href="/Jewel-Queen/assets/sprite-640aaf09.svg#icon-arrowsmallleft"></use>
+        </svg>
+      </button>
+      <div class="gallery-swiper-only">
+        <div class="swiper-gallery swiper">
+          <ul class="swiper-wrapper-gallery gallery-slide-box">
+            <li class="swiper-slide-gallery">
+              <img class="gallery-image" srcset="
+                  ./img/gallery-img/Frame 7 (1).jpg    185w,
+                  ./img/gallery-img/Frame 7 (1).jpg    352w,
+                  ./img/gallery-img/Frame 7 (1).jpg  370w,
+                  ./img/gallery-img/Frame 7 (1).jpg 704w
+                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px" src="/Jewel-Queen/assets/Frame 7 (1)-f6e58ac1.jpg"
+                alt="Jewel Queen screenshot of a treasure chest" loading="lazy" />
+            </li>
+            <li class="swiper-slide-gallery">
+              <img class="gallery-image" srcset="
+                  ./img/gallery-img/Frame 7 (1).jpg    185w,
+                  ./img/gallery-img/Frame 7 (1).jpg   352w,
+                  ./img/gallery-img/Frame 7 (1).jpg  370w,
+                  ./img/gallery-img/Frame 7 (1).jpg 704w
+                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px" src="/Jewel-Queen/assets/Frame 7 (1)-f6e58ac1.jpg"
+                alt="Jewel Queen screenshot of the queen" loading="lazy" />
+            </li>
+            <li class="swiper-slide-gallery">
+              <img class="gallery-image" srcset="
+                  ./img/gallery-img/Frame 7 (1).jpg    185w,
+                  ./img/gallery-img/Frame 7 (1).jpg   352w,
+                  ./img/gallery-img/Frame 7 (1).jpg  370w,
+                  ./img/gallery-img/Frame 7 (1).jpg 704w
+                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px" src="/Jewel-Queen/assets/Frame 7 (1)-f6e58ac1.jpg"
+                alt="Jewel Queen screenshot of levels and stars" loading="lazy" />
+            </li>
+            <li class="swiper-slide-gallery">
+              <img class="gallery-image" srcset="
+                  ./img/gallery-img/Frame 7 (1).jpg        185w,
+                  ./img/gallery-img/Frame 7 (1).jpg   352w,
+                  ./img/gallery-img/Frame 7 (1).jpg     370w,
+                  ./img/gallery-img/Frame 7 (1).jpg 704w
+                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px" src="/Jewel-Queen/assets/Frame 7 (1)-f6e58ac1.jpg"
+                alt="Jewel Queen screenshot" loading="lazy" />
+            </li>
+          </ul>
+        </div>
+        <div class="gallery-nav">
+          <div class="pagination" id="gallery-pagination">
+            <span class="pagination-btn"></span>
+            <span class="pagination-btn"></span>
+            <span class="pagination-btn"></span>
+          </div>
+        </div>
+      </div>
+      <button class="reviews-btn" id="gallery-btn-next" type="button">
+        <svg class="review-svg" width="24" height="24">
+          <use href="/Jewel-Queen/assets/sprite-640aaf09.svg#icon-arrowsmallright"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+    <!-- About us section -->
+    <section class="adventages-section" id="adventages">
+  <div class="container">
+    <h2 class="title desk-title">Adventages</h2>
+    <ul>
+
+    </ul>
+  </div>
+</section>
+    <!-- Reviews section -->
+    <section class="reviews-section" id="reviews-section">
+  <div class="container reviews-container">
+    <h2 class="title">Reviews</h2>
+    <div class="swiper-reviews swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="slide-box">
+            <p class="reviews-card-theme">John Doe</p>
+            <p class="reviews-card-text">
+              I’m obsessed with Robot Blaze! The graphics are amazing, and the gameplay is addictive. The variety of
+              levels and
+              constant action keep me hooked. A must-try for any fan of fast-paced adventure games!
+            </p>
+            <div class="reviews-card-box">
+              <!-- <img
+                class="reviews-card-img"
+                srcset="
+                  ./img/reviews-img/magiclover.jpg    1x,
+                  ./img/reviews-img/magiclover@2x.jpg 2x
+                "
+                src="./img/reviews-img/magiclover.jpg"
+                alt="MagicLover"
+                loading="lazy"
+                width="32"
+                height="32"
+              /> -->
+
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-box">
+            <p class="reviews-card-theme">Jane Smith</p>
+            <p class="reviews-card-text">
+              It’s a fun game, but I find the controls a little tricky when trying to dodge multiple obstacles at once.
+              Would love to
+              see a sensitivity adjustment.
+            </p>
+            <div class="reviews-card-box">
+              <!-- <img class="reviews-card-img" srcset="
+                  ./img/reviews-img/puzlefanatic.jpg    1x,
+                  ./img/reviews-img/puzlefanatic@2x.jpg 2x
+                " src="./img/reviews-img/puzlefanatic.jpg" alt="puzlefanatic" loading="lazy" width="32" height="32" /> -->
+              <!-- <p class="reviews-card-theme">PuzzleFanatic</p> -->
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-box">
+            <p class="reviews-card-theme">Michael Brown</p>
+            <p class="reviews-card-text">
+              Incredibly addictive! I’ve been playing for hours. The robot upgrades are great, and I love competing in
+              the daily
+              challenges. Sometimes it feels a bit repetitive, though.
+            </p>
+            <div class="reviews-card-box">
+              <!-- <img class="reviews-card-img" srcset="
+                  ./img/reviews-img/jewelsmaster.jpg    1x,
+                  ./img/reviews-img/jewelsmaster@2x.jpg 2x
+                " src="./img/reviews-img/jewelsmaster.jpg" alt="JewelsMaster" loading="lazy" width="32" height="32" /> -->
+              <!-- <p class="reviews-card-theme">JewelsMaster</p> -->
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-box">
+            <p class="reviews-card-theme">Emma White</p>
+            <p class="reviews-card-text">
+              Great game with a lot of potential! The levels are exciting, but I wish there were more diverse
+              environments. I’d love
+              to see new robot skins and features!
+            </p>
+            <!-- <p class="reviews-card-theme">PuzzleWizard</p> -->
+            <div class="reviews-card-box">
+              <!-- <img class="reviews-card-img" srcset="
+                  ./img/reviews-img/puzlewizard.jpg    1x,
+                  ./img/reviews-img/puzlewizard@2x.jpg 2x
+                " src="./img/reviews-img/puzlewizard.jpg" alt="EnchantingPlayer" loading="lazy" width="32"
+                height="32" /> -->
+              <!-- <p class="reviews-card-theme">PuzzleWizard</p> -->
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-box">
+            <p class="reviews-card-theme">Olivia Green</p>
+            <p class="reviews-card-text">
+              Fast-paced and exciting! The power-up system adds so much depth to the gameplay, and the boss fights are a
+              great
+              challenge. Can’t put it down!
+            </p>
+            <!-- <p class="reviews-card-theme">EnchantingPlayer</p> -->
+            <div class="reviews-card-box">
+              <!-- <img class="reviews-card-img" srcset="
+                  ./img/reviews-img/enchantingplayer.jpg    1x,
+                  ./img/reviews-img/enchantingplayer@2x.jpg 2x
+                " src="./img/reviews-img/enchantingplayer.jpg" alt="EnchantingPlayer" loading="lazy" width="32"
+                height="32" /> -->
+              <!-- <p class="reviews-card-theme">EnchantingPlayer</p> -->
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-box">
+            <p class="reviews-card-theme">David Clark</p>
+            <p class="reviews-card-text">
+              The game is fun, but there are moments when it lags a bit. The concept is fantastic, but I hope the
+              controls get
+              smoother in future updates.
+            </p>
+            <!-- <p class="reviews-card-theme">EnchantingPlayer</p> -->
+            <div class="reviews-card-box">
+              <!-- <img class="reviews-card-img" srcset="
+                          ./img/reviews-img/enchantingplayer.jpg    1x,
+                          ./img/reviews-img/enchantingplayer@2x.jpg 2x
+                        " src="./img/reviews-img/enchantingplayer.jpg" alt="EnchantingPlayer" loading="lazy" width="32"
+                        height="32" /> -->
+              <!-- <p class="reviews-card-theme">EnchantingPlayer</p> -->
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="review-nav">
+        <button class="reviews-btn" id="reviews-btn-prev" type="button">
+          <svg class="review-svg" width="24" height="24">
+            <use href="/Jewel-Queen/assets/sprite-640aaf09.svg#icon-arrowsmallleft"></use>
+          </svg>
+        </button>
+        <div class="pagination" id="reviews-pagination">
+          <span class="pagination-btn"></span>
+          <span class="pagination-btn"></span>
+          <span class="pagination-btn"></span>
+          <span class="pagination-btn"></span>
+          <span class="pagination-btn"></span>
+        </div>
+        <button class="reviews-btn" id="reviews-btn-next" type="button">
+          <svg class="review-svg" width="24" height="24">
+            <use href="/Jewel-Queen/assets/sprite-640aaf09.svg#icon-arrowsmallright"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Features section -->
+    <section class="How-to-Play-section" id="How-to-Play">
+  <div class="container how-to-play">
+    <h2 class="title">How to Play</h2>
+
+
+  </div>
+</section>
+    
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="container background-image">
+    <div class="footer-text-wrapper">
+      <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a><span class="footer-span"> / </span>
+      <a class="footer-link" href="./terms-and-conditions.html">Terms and Conditions.</a><span class="footer-span"> /
+      </span>
+      <a class="footer-link" href="./privacy-policy.html">Cookie Policy</a>
+    </div>
+    <p class="footer-text">©All rights reserved, 2025 blazegamehero.com</p>
+    <!-- <div class="footer-text-wrapper">
+      <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a
+      ><span class="footer-span"> / </span>
+      <a class="footer-link" href="./terms-and-conditions.html"
+        >Terms and Conditions.</a
+      >
+    </div> -->
+  </div>
+</footer>
+
+  <!-- modal -->
+  <div class="backdrop js-menu-container" id="mobile-menu">
+  <div class="mob-wrap">
+    <button class="mob-btn-close js-close-menu" aria-label="button-menu-close" type="button">
+      <svg class="btn-close" width="30" height="30">
+        <use href="/Jewel-Queen/assets/sprite-640aaf09.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <nav class="mob-menu">
+      <ul class="mob-list">
+        <li class="mob-item">
+          <a href="#" aria-label="home-link" class="mob-link js-header-link">Home</a>
+        </li>
+        <li class="mob-item">
+          <a href="#about-game" aria-label="gallery-link" class="mob-link js-header-link">Gallery</a>
+        </li>
+        <li class="mob-item">
+          <a href="#adventages" aria-label="about-us-link" class="mob-link js-header-link">About Us</a>
+        </li>
+        <li class="mob-item">
+          <a href="#reviews-section" aria-label="reviews-link" class="mob-link js-header-link">Reviews</a>
+        </li>
+        <li class="mob-item">
+          <a href="#How-to-Play" aria-label="features-link" class="mob-link js-header-link">Features</a>
+        </li>
+        <li class="mob-item">
+          <a href="./privacy-policy.html" aria-label="privacy-policy-link" class="mob-link js-header-link">Privacy
+            Policy</a>
+        </li>
+        <li class="mob-item">
+          <a href="./terms-and-conditions.html" aria-label="terms-conditions-link" class="mob-link js-header-link">Terms
+            &amp; Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+  
+</body>
+
+</html>
