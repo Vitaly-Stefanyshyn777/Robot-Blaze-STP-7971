@@ -1,0 +1,88 @@
+.policy {
+  padding-top: 60px;
+
+  @include media(desktop) {
+    padding-top: 100px;
+  }
+}
+
+.policy-header {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+}
+
+.policy-sub-header {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 2;
+
+  @include media(desktop) {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+.paragraph {
+  margin-bottom: 30px;
+  font-size: 14px;
+
+  @include media(desktop) {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+.no-margin-paragraph {
+  font-size: 14px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.policy-list {
+  font-size: 14px;
+  list-style-type: disc;
+  margin-left: 22px;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+  }
+}
+
+.policy li::marker {
+  font-size: 0.6em;
+}
+
+.policy-link {
+  text-decoration: underline;
+  transition: color 300ms ease;
+}
+
+.policy-link:hover,
+.policy-link:focus {
+  color: $_hight_green_swiper;
+}
+
+.download-btn-policy {
+  display: flex;
+  width: 274px;
+  height: 60px;
+  margin-top: 70px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}

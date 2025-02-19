@@ -1,0 +1,34 @@
+:root {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: $_main_text_color;
+  background-color: $_main_bg_color;
+}
+// common
+
+@import './common/vars';
+@import './common/reset';
+@import './common/mixins';
+@import './common/breakpoints';
+
+// base
+
+@import './base';
+//layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about-game';
+@import './layouts/adventages';
+@import './layouts/reviews';
+@import './layouts/how-to-play';
+@import './layouts/footer';
+@import './layouts/policy';
+@import './layouts/terms';
+@import './layouts/our-uniques';
+
+
+// components
+@import './components/button';
+@import './components/pagination-btn';
+
+// modal
+@import './layouts/modal_header';

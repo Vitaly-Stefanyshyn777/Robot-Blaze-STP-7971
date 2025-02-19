@@ -1,0 +1,138 @@
+.download-button {
+  display: flex;
+  width: 274px;
+  height: 60px;
+
+  padding: 6px 36px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  // background: linear-gradient(to bottom right, #ffc300 0%, #ff6f00 60%) bottom
+  //     right / 50% 50% no-repeat,
+  //   linear-gradient(to bottom left, #ffc300 0%, #ff6f00 60%) bottom left / 50%
+  //     50% no-repeat,
+  //   linear-gradient(to top left, #ffc300 0%, #ff6f00 60%) top left / 50% 50%
+  //     no-repeat,
+  //   linear-gradient(to top right, #ffc300 0%, #ff6f00 60%) top right / 50% 50%
+  //     no-repeat;
+
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-text-big {
+  font-size: 20px;
+}
+
+.btn-icon {
+  margin-right: 30px;
+}
+
+.btn-text-small {
+  font-size: 14px;
+}
+
+.download-button:hover,
+.download-button:focus {
+  // border-color: rgba(255, 129, 1, 0.5);
+  // background: linear-gradient(
+  //       to bottom right,
+  //       #ffc300 10%,
+  //       #fff600 35%,
+  //       #ff6f00 80%
+  //     )
+  //     bottom right / 50% 50% no-repeat,
+  //   linear-gradient(to bottom left, #ffc300 10%, #fff600 35%, #ff6f00 80%)
+  //     bottom left / 50% 50% no-repeat,
+  //   linear-gradient(to top left, #ffc300 10%, #fff600 35%, #ff6f00 80%) top left /
+  //     50% 50% no-repeat,
+  //   linear-gradient(to top right, #ffc300 10%, #fff600 35%, #ff6f00 80%) top
+  //     right / 50% 50% no-repeat;
+}
+
+.download-button:active {
+  // border: 2px solid rgba(255, 129, 1, 0.5);
+  // background: linear-gradient(to bottom right, #fff600 50%, #ff6f00 90%) bottom
+  //     right / 50% 50% no-repeat,
+  //   linear-gradient(to bottom left, #fff600 50%, #ff6f00 90%) bottom left / 50%
+  //     50% no-repeat,
+  //   linear-gradient(to top left, #fff600 50%, #ff6f00 90%) top left / 50% 50%
+  //     no-repeat,
+  //   linear-gradient(to top right, #fff600 50%, #ff6f00 90%) top right / 50% 50%
+  //     no-repeat;
+}
+
+// swiper btn
+.reviews-btn {
+  border: none;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $_hight_green_swiper;
+  @include media(desktop) {
+    width: 40px;
+    height: 40px;
+  }
+
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-svg {
+  min-width: 24px;
+
+  fill: transparent;
+  stroke: $_light_text_color;
+}
+
+.reviews-btn:hover {
+  box-shadow: inset -4px -4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.reviews-btn:active {
+  // box-shadow: inset -4px -4px 20px 0px rgb(255, 111, 0);
+}
+
+// back to home
+
+.back-home-link {
+  font-size: 15px;
+  line-height: 1.2;
+  top: 30px;
+  position: fixed;
+  background-color: $_hight_green_swiper;
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $_light_text_color;
+  transition: box-shadow 300ms ease;
+
+  @include media(desktop) {
+    top: 54px;
+    font-size: 20px;
+  }
+}
+
+.back-home-link:hover,
+.back-home-link:focus {
+  box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.back-home-link:active {
+  // box-shadow: -4px -4px 20px 0px #ff6f00 inset;
+}
+
+.back-home-arrow {
+  width: 20px;
+  height: 20px;
+  fill: transparent;
+  stroke: $_light_text_color;
+
+  @include media(desktop) {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.pagination-btn {
+  width: 25px;
+  height: 5px;
+  padding: 0;
+  background-color: $_light_text_color;
+  border-radius: 10px;
+}
+
+.pagination-btn--active {
+  height: 7px;
+  background-color: $_hight_green_swiper;
+}

@@ -1,0 +1,11 @@
+.terms {
+  padding-top: 60px;
+
+  @include media(desktop) {
+    padding-top: 100px;
+  }
+}
+
+.terms li::marker {
+  font-size: 0.6em;
+}
