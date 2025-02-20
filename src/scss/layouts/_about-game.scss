@@ -9,10 +9,10 @@
 }
 
 .gallery-container {
-  // background: linear-gradient(0deg, #e5bb4a 46%, #007670 304%);
 }
+
 .swiper-gallery {
-  width: 185px;
+  width: 253px;
   margin: 0 auto;
   margin-bottom: 20px;
   transition: all 500ms ease;
@@ -42,7 +42,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  max-width: 185px;
+  max-width: none;
   transition: all 500ms ease;
 
   @include media(desktop) {
@@ -52,12 +52,12 @@
 }
 
 .swiper-slide-gallery {
-  min-width: 185px;
+  min-width: 252px;
   max-height: 245px;
   transition: all 500ms ease;
   @include media(desktop) {
     min-width: 352px;
-    max-height: 312px;
+    max-height: 464px;
     overflow: hidden;
     flex-shrink: 0;
     z-index: 5;
@@ -65,28 +65,47 @@
 }
 
 .gallery-active-slide {
-  min-width: 185px;
-  min-height: 245px;
+  // min-width: 985px;
+  // min-height: 645px;
   transition: all 500ms ease;
   @include media(desktop) {
-    max-width: 352px;
-    min-height: 465px;
+    // max-width: 352px;
+    // min-height: 465px;
     z-index: 20;
-  }
-}
-
-.gallery-image {
-  border-radius: 18px;
-  width: 185px;
-  height: 245px;
-
-  @include media(desktop) {
-    width: 352px;
-    height: 465px;
   }
 }
 
 .gallery-nav {
   display: flex;
   justify-content: space-between;
+}
+
+/* Текстове описання */
+.gallery-description {
+  margin: 0 auto 40px;
+  max-width: 700px;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 15px;
+
+  @media (max-width: 768px) {
+    font-size: 14px; /* Менший шрифт */
+    max-width: 320px; /* Обмежуємо ширину для читабельності */
+    // margin: 0 auto 30px; /* Менший відступ знизу */
+    padding: 0 15px; /* Додаємо падінг для зручного читання */
+  }
+}
+
+/* Відступи між абзацами */
+.gallery-description p {
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+  }
 }

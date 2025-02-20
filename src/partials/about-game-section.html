@@ -1,61 +1,98 @@
 <section class="gallery" id="about-game">
   <div class="container gallery-container">
     <h2 class="title">About game</h2>
+
+    <div class="gallery-description">
+      <p>
+        Robot Blaze Dash Adventure immerses players in a high-octane adventure,
+        where you take control of a powerful robot speeding through futuristic cityscapes.
+        As you dash through various levels, you must avoid hazardous obstacles, defeat enemy robots,
+        and collect valuable upgrades to boost your abilities.
+        The game combines fast-paced action, strategic power-ups, and epic robot customization.
+      </p>
+      <p>
+        The game’s design features smooth, intuitive controls, allowing players to focus on
+        dodging obstacles, timing their jumps, and unleashing powerful attacks at the right moment.
+        As you progress through increasingly difficult levels, the cityscape changes,
+        introducing new challenges and environments to master.
+      </p>
+      <p>
+        Unlock new abilities, improve your robot with energy-powered upgrades, and compete
+        in daily challenges for exclusive rewards.
+        Robot Blaze Dash Adventure brings high-speed racing and intense combat into one addictive
+        experience that will keep you coming back for more.
+      </p>
+    </div>
+
     <div class="gellary-swiper-container">
+      <!-- Кнопка "Назад" -->
       <button class="reviews-btn" id="gallery-btn-prev" type="button">
         <svg class="review-svg" width="24" height="24">
           <use href="./img/sprite.svg#icon-arrowsmallleft"></use>
         </svg>
       </button>
+
       <div class="gallery-swiper-only">
         <div class="swiper-gallery swiper">
           <ul class="swiper-wrapper-gallery gallery-slide-box">
+            <!-- Слайд 1 -->
             <li class="swiper-slide-gallery">
               <img class="gallery-image" srcset="
-                  ./img/gallery-img/Frame 7 (1).jpg    185w,
-                  ./img/gallery-img/Frame 7 (1).jpg    352w,
-                  ./img/gallery-img/Frame 7 (1).jpg  370w,
-                  ./img/gallery-img/Frame 7 (1).jpg 704w
-                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px" src="./img/gallery-img/Frame 7 (1).jpg"
-                alt="Robot Blaze screenshot of a treasure chest" loading="lazy" />
+                  ./img/gallery-img/screenshot-1-mobile-x1.jpg 185w,
+                  ./img/gallery-img/screenshot-1-desktop-x1.jpg 352w,
+                  ./img/gallery-img/screenshot-1-mobile-x2.jpg 370w,
+                  ./img/gallery-img/screenshot-1-desktop-x2.jpg 704w
+                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+                src="./img/gallery-img/screenshot-1-desktop-x1.jpg" alt="Screenshot 1" loading="lazy" />
             </li>
+
+            <!-- Слайд 2 -->
             <li class="swiper-slide-gallery">
               <img class="gallery-image" srcset="
-                  ./img/gallery-img/Frame 7 (1).jpg    185w,
-                  ./img/gallery-img/Frame 7 (1).jpg   352w,
-                  ./img/gallery-img/Frame 7 (1).jpg  370w,
-                  ./img/gallery-img/Frame 7 (1).jpg 704w
-                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px" src="./img/gallery-img/Frame 7 (1).jpg"
-                alt="Robot Blaze screenshot of the queen" loading="lazy" />
+                  ./img/gallery-img/screenshot-2-mobile-x1.jpg 185w,
+                  ./img/gallery-img/screenshot-2-desktop-x1.jpg 352w,
+                  ./img/gallery-img/screenshot-2-mobile-x2.jpg 370w,
+                  ./img/gallery-img/screenshot-2-desktop-x2.jpg 704w
+                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+                src="./img/gallery-img/screenshot-2-desktop-x1.jpg" alt="Screenshot 2" loading="lazy" />
             </li>
+
+            <!-- Слайд 3 -->
             <li class="swiper-slide-gallery">
               <img class="gallery-image" srcset="
-                  ./img/gallery-img/Frame 7 (1).jpg    185w,
-                  ./img/gallery-img/Frame 7 (1).jpg   352w,
-                  ./img/gallery-img/Frame 7 (1).jpg  370w,
-                  ./img/gallery-img/Frame 7 (1).jpg 704w
-                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px" src="./img/gallery-img/Frame 7 (1).jpg"
-                alt="Robot Blaze screenshot of levels and stars" loading="lazy" />
+                  ./img/gallery-img/screenshot-3-mobile-x1.jpg 185w,
+                  
+                  ./img/gallery-img/screenshot-3-mobile-x2.jpg 370w,
+                  ./img/gallery-img/screenshot-3-desktop-x2.jpg 704w
+                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+                src="./img/gallery-img/screenshot-3-desktop-x1.jpg" alt="Screenshot 3" loading="lazy" />
             </li>
+
+            <!-- Слайд 4 -->
             <li class="swiper-slide-gallery">
               <img class="gallery-image" srcset="
-                  ./img/gallery-img/Frame 7 (1).jpg        185w,
-                  ./img/gallery-img/Frame 7 (1).jpg   352w,
-                  ./img/gallery-img/Frame 7 (1).jpg     370w,
-                  ./img/gallery-img/Frame 7 (1).jpg 704w
-                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px" src="./img/gallery-img/Frame 7 (1).jpg"
-                alt="Robot Blaze screenshot" loading="lazy" />
+                  ./img/gallery-img/screenshot-4-mobile-x1.jpg 185w,
+                  ./img/gallery-img/screenshot-4-desktop-x1.jpg 352w,
+                  ./img/gallery-img/screenshot-4-mobile-x2.jpg 370w,
+                  ./img/gallery-img/screenshot-4-desktop-x2.jpg 704w
+                " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+                src="./img/gallery-img/screenshot-4-desktop-x1.jpg" alt="Screenshot 4" loading="lazy" />
             </li>
           </ul>
         </div>
+
+        <!-- Пагінація -->
         <div class="gallery-nav">
           <div class="pagination" id="gallery-pagination">
+            <span class="pagination-btn"></span>
             <span class="pagination-btn"></span>
             <span class="pagination-btn"></span>
             <span class="pagination-btn"></span>
           </div>
         </div>
       </div>
+
+      <!-- Кнопка "Вперед" -->
       <button class="reviews-btn" id="gallery-btn-next" type="button">
         <svg class="review-svg" width="24" height="24">
           <use href="./img/sprite.svg#icon-arrowsmallright"></use>
