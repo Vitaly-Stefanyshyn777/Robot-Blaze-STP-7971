@@ -36,7 +36,7 @@ const swiperGallery = new Swiper(".swiper-gallery", {
     clickable: true,
   },
 
-  modules: [Navigation, Keyboard, Pagination, EffectCreative],
+  modules: [Navigation, Keyboard, Pagination],
 
   navigation: {
     nextEl: "#gallery-btn-next",
