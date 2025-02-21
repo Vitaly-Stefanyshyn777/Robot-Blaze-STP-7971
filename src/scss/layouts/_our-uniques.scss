@@ -1,0 +1,7 @@
+.uniques_title {
+  color: #fff;
+  @include font(14, 18.67);
+  @include media(desktop) {
+    @include font(30, 40);
+  }
+}

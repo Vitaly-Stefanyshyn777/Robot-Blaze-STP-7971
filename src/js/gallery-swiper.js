@@ -1,9 +1,16 @@
 import Swiper from "swiper";
-import { Navigation, Pagination, Keyboard } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Keyboard,
+  EffectCreative,
+} from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+import "swiper/css/effect-creative";
 
 const swiperGallery = new Swiper(".swiper-gallery", {
   direction: "horizontal",
@@ -14,6 +21,8 @@ const swiperGallery = new Swiper(".swiper-gallery", {
   slideToClickedSlide: true,
   slideClass: "swiper-slide-gallery",
   wrapperClass: "swiper-wrapper-gallery",
+
+  effect: window.innerWidth <= 1200 ? "slide" : "creative",
 
   keyboard: {
     enabled: true,
@@ -36,10 +45,19 @@ const swiperGallery = new Swiper(".swiper-gallery", {
 
   breakpoints: {
     1200: {
-      slidesPerView: 1, // Рівно один слайд
+      slidesPerView: "auto",
       spaceBetween: 10,
-      centeredSlides: false, // Вимикаємо центрування, щоб не було накладання
-      effect: "slide", // Простий ефект, без creative налаштувань
+      centeredSlides: true,
+      effect: "creative",
+      creativeEffect: {
+        limitProgress: 2,
+        prev: {
+          translate: [-300, "10%", 0],
+        },
+        next: {
+          translate: [300, "10%", 0],
+        },
+      },
       slideActiveClass: "gallery-active-slide",
     },
     320: {
