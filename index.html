@@ -15,7 +15,7 @@
   <script type="module" crossorigin src="/Robot-Blaze-STP-7971/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/Robot-Blaze-STP-7971/assets/vendor-a2f39585.js">
   <link rel="stylesheet" href="/Robot-Blaze-STP-7971/assets/vendor-15e0163c.css">
-  <link rel="stylesheet" href="/Robot-Blaze-STP-7971/assets/styles-6daa4dde.css">
+  <link rel="stylesheet" href="/Robot-Blaze-STP-7971/assets/styles-fdcf4426.css">
 </head>
 
 <body>
@@ -98,20 +98,27 @@
   <div class="header-wraper">
     <!-- Логотип окремо від навігації -->
     <div class="header-logo-wraper">
-      <a href="./index.html">
-        <img src="/Robot-Blaze-STP-7971/assets/logo-c5cbb670.png" alt="logo" class="header-logo" width="55" height="55" />
-      </a>
+      <picture id="hero-logo">
+        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAmfSURBVHgBnZcJjFx1Hcc/7817szM7s7Ozs3e3u93tRVuwB9JKoSVbRe7GkhBDCoipYAhqlGgoIAoEI4YYAyaCUQgiESmJQCKpVG23lUIrhXaFwrZl251t9+ju7M7O/WbevMPfHNs2CET4J5N3zO8+v0/hY84jpy7qnT/6+Oa2wppeFKUjXfCQK4KtQCTksGhOnrC/iGV5ODrmYyKhUe9zWNxkEvHbqK4IcUBxnPdVTem3ncL2wMKmVz6qRzn34cEhuj01PFNXuKp38cgjNFsrKDgKORFkiECvH7paTJqDFh55b1kK8awHw1QIiUatqGAbKk7JSvlfFZlq2RKbYzU7ogcb7t9w79L+6Kw+bfbm9jdYOR2nz1NL2JlqYWakAdur4NaAR5R6RVJIZHpTKumYD1sUKh559rp4S47KcyqvUDTlXvQps967CmZeZazO6I56M4c2v8GG5y+l/4zyTfvoTpj0qQnCSh6KRo4mLY9PpIYjEuo6C0SpOqNi5DVsuyy3zC1hLcfPqcbRqTrjnnO1bItc7QRG42TYzNB34wCrXlhKtKzcX0+fYxO2CsIvHubrj5PXRtCVxbTU2dQZEvaYSiEthol0txzPiuCysurzmSSee3Ur9I7mYOserABhef+M/LNBW7+NTbZGN7rQ+ir0Sk0GNZ0lYDnocZXspEoxUwmn66nIddTKD3l2vOW0lg0v/apprgqTW1Xqw/VTyDeQ0ZPilKf3opc9vVrR8V1jSqx1UWxaVcF2DZoweCUSVlLFSlcU26LI0lyycxQi/9xO10u/IjBxmD80raLr+b+V0+GRUIiTqEkXu1YKMADZrM50ZBGZZDNpTwrVo5BMOLdo02lnZVDcCUjucq4jnSVM+TrR4kNJq9g5yoVVFO8S7Q7n37uFOTXPYa+TGog7bD1vC48e34G7Tqpbim3U0Xlk6de4+Vs3cdEDN6NeKALmKtww7PK61cWmJ+fSfCpHZtTuVeY+HM52XK3UBhpdTOmnUqQ67UtZO/UTlscuJiT51oMw1e1w2ZUe7DukTFLVctpbzfV14u1DNuvm3cmT++7lgmVLsK43UeqdSvhn8y9RUHc6zLttM763xiytOOMnPeOVvDkU047kRqNZb5PwhSlKHZjCbDbDZTfp2Ld4ziounXXVqxhoqSovJV6kaf5vsX8kbZis5r1ELilVn3UpTAmdFMmpg3/iiq2/k7mQ8pE+EaAgk8SS2lW1CH7/cvxWK5Z4nKpzWL8hgv1DMT3Pxx9RznelDpwZHF3okmf7zJ1UyLwIG699lJtv+yYeTWXHrj18/YmtaFqmGXW4nqIUlllv0d54AQvUdQSVMBIEnFNv4rkr98mKOauoHFrrnHdScOPb4C8vj/DTSAuOTD1peTb3Xs3J2gLaQu/5hJwGmcMhsnmThcXl9NgLCAVkMkk+L//+DXCrw+c56lMOT/z+A74cbimPW7MgdZWfJhFPkIyPozZ6x2j3DdPqH6Q7FCUcPCpTJ4bQ0fzsFdQsi50dW5/lSHE91fAVvnrJPLR//LXc+6o5jZv5FzMTr3Jq7AjaeN1+KagC1lwbTQxMBRfQkOphVX0Xzw24rF7F5zvSdrdZO+F+P3+8PcscGY0Bz3FaG3bK/BgnqpgyrgMmEy15Yq1FJn1FhvQoY+4wmUKRuWoDTlDhc53SCv6Gyqsvd7G8pRZLJtj4VJqBER/xTAONMje0woSMzrSPoiWLpLQYUmEK2RAnjff49tvbYT2f/UhHulL15s/qefy61XwvFpfpadA/ZDNwrAu9GKJlOoEWGQ0TO+5lWk+hNSXxJjpYH7qGl3Yd4rWaBp52xv8/haVql3Ih6uI56dJnrWFrcJBi3260p3fxn2OHGQlJdEuWmTmyviTaypSfofGQoJR68qfDLGtazLYD+/FODhBXJTayUM5u/Y8/iszx17ctYdiewyG7lr31SQYb4lxbu4gH1qV5eyLFnrbHmVnWQFzmB0I/kY6i9Qj66Il5aZGtE5+p5Qv++Zw2E0RPHueEx4vylot7yafn3WlTWcwxXpRZPLjmWoK6Q/3wABuD7YTnvUt83GGwMUGuLkGxM4ZTp1E4nUNLxoM0GY3Mm/ZxYWsa3Yry/nic2mCYlNfEc1C22hVuJQKf5LnshJY74Ne+kyjTv6Fzx1o62poZGN3HnsdcOl4bY/q0hj4RIfLOfJy0Rsw7gSfEyh/n0l26ZoRYohdoNePEl65lJjaFmU5Ql57HipFRlKV8cr+X8i2jWP27y9rt9eKhF8MwOCiD5Q0prKNrTlA4ESF8cDGdO5cQGhR4NOU42kReF15dVqkmCFWnsbaG85InORw/gmIXuKc5ycVjnZz37CmULW5lixWpjFJZPAiIVHc5RA82cuXF17B6o8ZNGy8henSM9HQS9SoPR/btoyfvx/ywldopaTvprGDchyeozL01oNQ3agEXdXmM/IXTvCtg8Hh2Gfff9x2WdHTwfCFHfHAhiw6MENwrq/KA0P7bJbc3wM79K7g8F8K48+fc8KX1tAYyvDb4Cm8bByj4Rmk7Pkmv4aXT8KPFdNkhHjJmgXhhul8rquaegie7eKazwDvrorhfHCV+OobRM8nDsTdp3hCjaUuOp96b4YW72ugcWkhRq2V//jAxdYJIW4J7HnyIlD6K0RwnHx+iPZ6kXiBYoFCgRSJDQICHmqS2Jog96ZDPuBIws1/583vdvXU+tc8jQNEMWGUAppVApIS2BExVgc6lTaTJg1rGaCYfDiVJnGhGy0fI5WZo6rJZtEIt08hgRHUqqLaEgjwlrOdzK1BaOosZHY9ENpkyry/30O2P0ZfK0ts+R/a+YPToMMzvERw+4zI+ptDZ7TL0gaRYRmBt0MUQTBdpl3TL/M7Jqm0TPq8YOSx8C+YLX8JlbFShq8Q3IIbLtAvUCfaTPd8otMkU0Rfuo6es/MYlvu6lhnNoKKiHMzmXC4p5jnQGqZ9yCKdzDLf7mBcriuEueQGWfqliI+CnmDPoEAnDAZ20UeEbqPI1VPm6hM+Wks5KJIKSglTAn4hMFFb9IpGPnpkej64Or5Rvqz5FUcKuW/rkkL/kKs+41eu5nUW14Mu0pfsq3afxCWNCPqU23N2fKH+xqLPv7z6Q6Nd0dVUqY0TVqgDDNMkahbIQR7CzkS+QyRqiVKpdSLL5vNRBRURSPJ3ly5/h4wyfYeR3F3Vl1aziWeP/5/ygk001Hn1j3mWlv0Zd7hTsirclCC2gUC9/nQhIFOmuUzJFlolPkG3eRpcKy8l7v7f00WidFIt2Cxh/7pdRdn9Uz38BlsxtRn77y4cAAAAASUVORK5CYII= " media="(max-width: 1199px)">
+        <source srcset="/Robot-Blaze-STP-7971/assets/logo-desk-1x-c5cbb670.png " media="(min-width: 768px)">
+        <img src="/Robot-Blaze-STP-7971/assets/logo-desk-1x-c5cbb670.png" alt="logo" class="header-logo" width="" height="">
+      </picture>
     </div>
 
-    <!-- Навігація для десктопу -->
     <nav class="header-list-wraper">
-      <ul class="header-list">
-        <li class="header-list-item"><a href="./index.html">Home</a></li>
-        <li class="header-list-item"><a href="#about-game">About game</a></li>
-        <li class="header-list-item"><a href="#adventages">Adventages</a></li>
-        <li class="header-list-item"><a href="#reviews-section">Reviews</a></li>
-        <li class="header-list-item"><a href="#How-to-Play">How to play</a></li>
-      </ul>
+
+      <div class="header-logo-wraper">
+
+
+
+        <ul class="header-list">
+          <li class="header-list-item"><a href="./index.html">Home</a></li>
+          <li class="header-list-item"><a href="#about-game">About game</a></li>
+          <li class="header-list-item"><a href="#adventages">Adventages</a></li>
+          <li class="header-list-item"><a href="#reviews-section">Reviews</a></li>
+          <li class="header-list-item"><a href="#How-to-Play">How to play</a></li>
+          <li class="header-list-item"><a href="#our-uniques">Our Uniques</a></li>
+        </ul>
     </nav>
 
     <!-- Кнопка бургера для мобільної версії -->
@@ -123,28 +130,89 @@
       </button>
     </div>
   </div>
+  </div>
+
+  <!-- Навігація для десктопу -->
+
 </header>
   <main>
     <!-- Hero -->
-    <section class="hero">
+    <!-- <section class="hero">
   <div class="hero-wrapper container">
     <div class="gradient"></div>
+
+
     <div class="hero-text-button-container">
-      <h1 class="hero-title">Robot Blaze dash adventure </h1>
-      <p class="hero-text">
-        Dash Through the Future!
-      </p>
+      <h1 class="hero-title">Robot Blaze dash adventure</h1>
+      <p class="hero-text">Dash Through the Future!</p>
+
       <a class="download-button" id="display-none" aria-label="Download Robot Blaze on Google Play"
-        href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us"><img
-          class="btn-icon" src="/Robot-Blaze-STP-7971/assets/google_download-16729ab1.svg" alt="google play logo" />
+        href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us">
+        <img class="btn-icon" src="./img/google_download.svg" alt="google play logo" />
         <p>
           <span class="btn-text-small">Download on</span>
           <span class="btn-text-big">Google Play</span>
         </p>
       </a>
     </div>
-    <img class="hero-image" srcset="/Robot-Blaze-STP-7971/assets/Exclude-e0e4788c.png 1x, /Robot-Blaze-STP-7971/assets/Exclude-e0e4788c.png 2x" src="/Robot-Blaze-STP-7971/assets/Exclude-e0e4788c.png" alt="Robot Blaze game displayed on an iPhone screen" width="599px"
-      height="443px" />
+
+
+    <img class="hero-image" src="../img/hero-img//hero-desktop-x1.png" srcset="
+    ../img/hero-img//hero-mobile-x1.png 185w,
+    ../img/hero-img//hero-mobile-x2.png 352w,
+    ./img/hero-img//hero-desktop-x1.png 370w,
+    
+
+  " sizes="
+    (min-width: 1200px) 704px,
+    (min-width: 768px) and (max-width: 1199px) 352px,
+    (max-width: 767px) 185px
+  " alt="Robot Blaze game displayed on an iPhone screen" width="599" height="443" />
+
+    <a class="download-button mobile-btn" aria-label="Download Robot Blaze on Google Play"
+      href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us">
+      <img class="btn-icon" src="./img/google_download.svg" alt="google play logo" />
+      <p>
+        <span class="btn-text-small">Download on</span>
+        <span class="btn-text-big">Google Play</span>
+      </p>
+    </a>
+  </div>
+</section> -->
+
+
+<section class="hero">
+  <div class="hero-wrapper container">
+
+    <div class="hero-text-button-container">
+      <h1 class="hero-title">Robot Blaze dash adventure</h1>
+      <p class="hero-text">Dash Through the Future!</p>
+
+      <a class="download-button-hero" id="display-none" aria-label="Download Robot Blaze on Google Play"
+        href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us">
+        <img class="btn-icon" src="/Robot-Blaze-STP-7971/assets/Frame-99d84b90.svg" alt="google play logo" />
+        <p>
+          <!-- <span class="btn-text-small">Download on</span> -->
+          <span class="btn-text-btn">Play now</span>
+        </p>
+      </a>
+    </div>
+
+    <picture class="hero-image">
+      <source srcset="/Robot-Blaze-STP-7971/assets/hero-mobile-x1-7c6b28ae.png " media="(max-width: 1199px)">
+      <source srcset="/Robot-Blaze-STP-7971/assets/hero-desktop-x1-5bf9c7ec.png " media="(min-width: 768px)">
+      <img id="image-hero" src="/Robot-Blaze-STP-7971/assets/hero-desktop-x1-5bf9c7ec.png" alt="Hero Image">
+    </picture>
+
+    <a class="download-button-mobile mobile-btn" aria-label="Download Robot Blaze on Google Play"
+      href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us">
+      <img id="image-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANySURBVHgB1ZbPTxNREMdnwAQkKBBj4gGh/gXy4yAXsfwMwYP15o3KwYAnOAgkHoD/APFqUuCCiSZwMh5QaryYmMgvgZMpmkihQGypP1K7+8aZ93Zr1xSlojFO87b73uzOZ78z87YF+JfWMBPw+WcC5fAHDbMnEvyTlZrhZT9Pib2ThYVq9MXVxxtwRCvInrzbr+/TEGKKIiSbgtZXjNTf7wg1THf44AjmAUX2go3v45eBbAWgSA8GAhIE00QLddPtw/Cb5gGRsjCa6IRNHgJQxCbfNgNtKgcLRmqn2iN1U21ByNM8IFQWSNToficJEGxCrYo0EpyDj4+hmlBbpCbU6odDmgfEEB4Msy3cTLRDNNEhSnjO2ROWLXVTklqRWs3f8+fvtTDU78sPZKU1RGDSCVv77TJMzVx1Jo0IlsxBfMEbZwoitN4SovWDG8ZbI/mwKtKqbK1wK+HC2GeZ5mAou5QM6qkE6K1CaZwuUOl5Wmke/iUILUunDrNSSHYat/fbaCvRqoOTpXhZK4TeSsTeau5JJWlHUejjKCO01ByhpZauA0EcRUMcVciqSEMZFku2wHay1QRlSM9ZNEq4ftKe7nYQHyfGx+cTtNDclxtkm7RJ96FOHcPIrMmIJZtwO9mkATer+FZyARkYaZCdgV5xQx/zCBJF8kA8OBE6Tiat4iHC7jdl0F1UBlCdJA1wqqtfWM4pX8rXmgg5QWhb5jqDQxNaM7V7MPYKhniktk7IE2OxP0k5Afp2vTqZEwSK7za9575sBaYjDMYWcCi2IGiJhamnpSS+oktJI90AUcMUvOWi9OOF8OwBoDSaNLkPZGIM7SzD4M4imIya1xKf4Zf5Uq6douKLH11VcV6/AyUwhrXheHboHDVCpyZaGgzsLKEMMImUpnPKZy5kmOxtOt74eVzehdjkBeSukewjzPxEMWCFU7as6yTVMmUwdXMbhg/h1POT10tuP9qAn5hXkVKOGoKB3VUa2F0xJaLv/UNarCaFWcjo6bmHYTiEeRXJ5uQwt3ZXOWWvgbJ9AG5HbrC20VNzDyYgD/tBkQUDe2usZs15cnA2kz6Nc7eNF6r0WMWT2TjkaR7Q3ejLZ9fiG34pM2YambuAaCwJavTcfP4A1zx/Tj74A+UWFIRYWsApRfgYUH9FeHYR/oZFGBj1B3zwP9o3l75iPzqtthYAAAAASUVORK5CYII=" alt="google play logo" />
+      <p>
+        <!-- <span class="btn-text-small">Download on</span> -->
+        <span class="btn-text-big">Play now</span>
+      </p>
+    </a>
+
   </div>
 </section>
     <!--  Gallery section -->
@@ -652,12 +720,12 @@
 
   <!-- modal -->
   <div class="backdrop js-menu-container" id="mobile-menu">
-  <div class="mob-wrap">
-    <button class="mob-btn-close js-close-menu" aria-label="button-menu-close" type="button">
+  <div class="mob-wrap js-close-menu">
+    <!-- <button class="mob-btn-close js-close-menu" aria-label="button-menu-close" type="button">
       <svg class="btn-close" width="30" height="30">
-        <use href="/Robot-Blaze-STP-7971/assets/sprite-640aaf09.svg#icon-menu"></use>
+        <use href="./img/sprite.svg#icon-menu"></use>
       </svg>
-    </button>
+    </button> -->
     <nav class="mob-menu">
       <ul class="mob-list">
         <li class="mob-item">
@@ -678,11 +746,11 @@
         <li class="mob-item">
           <a href="./privacy-policy.html" aria-label="privacy-policy-link" class="mob-link js-header-link">Privacy
             Policy</a>
-        </li>
+          <!-- </li>
         <li class="mob-item">
           <a href="./terms-and-conditions.html" aria-label="terms-conditions-link" class="mob-link js-header-link">Terms
             &amp; Conditions</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </div>
