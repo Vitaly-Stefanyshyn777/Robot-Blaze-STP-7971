@@ -1,76 +1,178 @@
 .hero-wrapper {
+  /* На мобільних: усе колонкою (текст зверху, зображення + кнопка внизу) */
   display: flex;
+  flex-direction: column;
+  // align-items: center;
+  text-align: center;
   position: relative;
-  height: 324px;
-  padding-top: 100px;
-  // background: linear-gradient(0deg, #e5bb4a -37%, #007670 147%);
+  height: auto;
+  // padding-top: 100px;
+  padding-top: 27px;
 
   @include media(desktop) {
-    padding-top: 167px;
-    height: 695px;
+    /* На десктопі: повертаємо оригінальний код */
+    // padding-top: 167px;
+    padding-top: 46px;
+    height: 605px;
+    flex-direction: row; // Текст ліворуч, зображення праворуч
+    text-align: left;
   }
 }
 
 .hero-text-button-container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  flex-basis: 272px;
+  // gap: 25px;
+  gap: 10px;
+  // flex-basis: 272px;
 
   @include media(desktop) {
     flex-basis: 728px;
-    gap: 38px;
+    // gap: 38px;
+    gap: 53px;
   }
 }
 
+/* Заголовок */
 .hero-title {
-  font-size: 32px;
-  line-height: 36px;
+  // font-size: 20px;
+  font-size: 18px;
+  text-align: center;
   color: #ffffff;
 
   @include media(desktop) {
-    // font-size: 64px;
     font-size: 48px;
-    
-    line-height: 90px;
+    // line-height: 90px;
   }
 }
 
+/* Текст */
 .hero-text {
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
+  // line-height: 20px;
+  margin-bottom: 22px;
   color: #ffffff;
 
   @include media(desktop) {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 36px;
+    font-weight: 500;
   }
 }
 
+/* Десктопна кнопка (з id="display-none"): ховаємо на мобільних, показуємо на десктопі */
 #display-none {
   display: none;
 
   @include media(desktop) {
     display: flex;
-      margin-top: 5em;
-        /* Верхній відступ */
-        margin-right: 15px;
-        /* Правий відступ */
-        margin-bottom: 20px;
-        /* Нижній відступ */
-        margin-left: 5px;
+    margin-top: 5em;
+    margin-right: 15px;
+    // margin-bottom: 20px;
+    margin-bottom: 35px;
+    margin-left: 5px;
   }
 }
 
+/* Зображення: тепер видиме на мобільних, а на десктопі залишається праворуч */
 .hero-image {
-  display: none;
+  display: block; // Показуємо на мобільних
+  width: 100%;
+  max-width: 370px; // Приблизний розмір на моб.
+  height: auto;
+  margin: 20px auto 0; // Відступ зверху, по центру
 
   @include media(desktop) {
+    /* Оригінальний код на десктопі */
     display: block;
     position: absolute;
-    // right: -162px;
     right: 38px;
-    // top: 87px;
+    // top: 87px; // За потреби
+    max-width: 599px;
+    margin-top: 0;
   }
+}
+
+/* Нова мобільна кнопка: показуємо тільки на мобільних */
+.mobile-btn {
+  display: block;
+  margin: 27px auto 0; // Відступ від зображення, по центру
+  margin-bottom: 5em;
+
+  @include media(desktop) {
+    display: none; // Ховаємо на десктопі
+  }
+}
+
+.download-button-mobile {
+  display: flex;
+  width: 173px;
+  height: 35px;
+
+  padding: 0px 13px;
+  border: 3px solid rgba(93, 170, 189, 0.9);
+  // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  // background: linear-gradient(to bottom right, #ffc300 0%, #ff6f00 60%) bottom
+  //     right / 50% 50% no-repeat,
+  //   linear-gradient(to bottom left, #ffc300 0%, #ff6f00 60%) bottom left / 50%
+  //     50% no-repeat,
+  //   linear-gradient(to top left, #ffc300 0%, #ff6f00 60%) top left / 50% 50%
+  //     no-repeat,
+  //   linear-gradient(to top right, #ffc300 0%, #ff6f00 60%) top right / 50% 50%
+  //     no-repeat;
+  // border: 3px solid rgba(93, 170, 189, 0.9);
+  // border-radius: 12px;
+  // width: 173px;
+  // height: 35px;
+
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-icon-hero {
+  margin-right: 8px;
+}
+
+// жорстко встановлений клас, має вищу пріорітетність
+#image-hero {
+  display: inline-block !important;
+
+  @include media(desktop) {
+    display: block !important;
+    width: 599px;
+    height: 443px;
+  }
+}
+
+#image-btn {
+  margin-right: 13px !important;
+  // @include media(desktop) {
+  //   display: block !important;
+  // }
+}
+
+.btn-text-btn {
+  font-weight: 400;
+  font-size: 38px;
+  text-align: center;
+  color: #fff;
+}
+
+.download-button-hero {
+  display: flex;
+  // width: 274px;
+  // height: 60px;
+
+  padding: 6px 36px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  border: 3px solid rgba(93, 170, 189, 0.9);
+  border-radius: 12px;
+  width: 346px;
+  height: 65px;
+
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }

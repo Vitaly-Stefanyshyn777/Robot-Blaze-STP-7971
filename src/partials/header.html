@@ -77,20 +77,27 @@
   <div class="header-wraper">
     <!-- Логотип окремо від навігації -->
     <div class="header-logo-wraper">
-      <a href="./index.html">
-        <img src="./img/header-img/logo.png" alt="logo" class="header-logo" width="55" height="55" />
-      </a>
+      <picture id="hero-logo">
+        <source srcset="./img/header-img/logo-mobile-1x.png" media="(max-width: 1199px)">
+        <source srcset="./img/header-img/logo-desk-1x.png" media="(min-width: 768px)">
+        <img src="./img/header-img/logo-desk-1x.png" alt="logo" class="header-logo" width="" height="">
+      </picture>
     </div>
 
-    <!-- Навігація для десктопу -->
     <nav class="header-list-wraper">
-      <ul class="header-list">
-        <li class="header-list-item"><a href="./index.html">Home</a></li>
-        <li class="header-list-item"><a href="#about-game">About game</a></li>
-        <li class="header-list-item"><a href="#adventages">Adventages</a></li>
-        <li class="header-list-item"><a href="#reviews-section">Reviews</a></li>
-        <li class="header-list-item"><a href="#How-to-Play">How to play</a></li>
-      </ul>
+
+      <div class="header-logo-wraper">
+
+
+
+        <ul class="header-list">
+          <li class="header-list-item"><a href="./index.html">Home</a></li>
+          <li class="header-list-item"><a href="#about-game">About game</a></li>
+          <li class="header-list-item"><a href="#adventages">Adventages</a></li>
+          <li class="header-list-item"><a href="#reviews-section">Reviews</a></li>
+          <li class="header-list-item"><a href="#How-to-Play">How to play</a></li>
+          <li class="header-list-item"><a href="#our-uniques">Our Uniques</a></li>
+        </ul>
     </nav>
 
     <!-- Кнопка бургера для мобільної версії -->
@@ -102,4 +109,8 @@
       </button>
     </div>
   </div>
+  </div>
+
+  <!-- Навігація для десктопу -->
+
 </header>

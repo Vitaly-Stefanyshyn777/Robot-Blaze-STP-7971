@@ -1,24 +1,78 @@
-<section class="hero">
+<!-- <section class="hero">
   <div class="hero-wrapper container">
     <div class="gradient"></div>
+
+
     <div class="hero-text-button-container">
-      <h1 class="hero-title">Robot Blaze dash adventure </h1>
-      <p class="hero-text">
-        Dash Through the Future!
-      </p>
+      <h1 class="hero-title">Robot Blaze dash adventure</h1>
+      <p class="hero-text">Dash Through the Future!</p>
+
       <a class="download-button" id="display-none" aria-label="Download Robot Blaze on Google Play"
-        href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us"><img
-          class="btn-icon" src="./img/google_download.svg" alt="google play logo" />
+        href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us">
+        <img class="btn-icon" src="./img/google_download.svg" alt="google play logo" />
         <p>
           <span class="btn-text-small">Download on</span>
           <span class="btn-text-big">Google Play</span>
         </p>
       </a>
     </div>
-    <img class="hero-image" srcset="
-        ./img/hero-img/Exclude.png 1x,
-        ./img/hero-img/Exclude.png 2x
-      " src="./img/hero-img/Exclude.png" alt="Robot Blaze game displayed on an iPhone screen" width="599px"
-      height="443px" />
+
+
+    <img class="hero-image" src="../img/hero-img//hero-desktop-x1.png" srcset="
+    ../img/hero-img//hero-mobile-x1.png 185w,
+    ../img/hero-img//hero-mobile-x2.png 352w,
+    ./img/hero-img//hero-desktop-x1.png 370w,
+    
+
+  " sizes="
+    (min-width: 1200px) 704px,
+    (min-width: 768px) and (max-width: 1199px) 352px,
+    (max-width: 767px) 185px
+  " alt="Robot Blaze game displayed on an iPhone screen" width="599" height="443" />
+
+    <a class="download-button mobile-btn" aria-label="Download Robot Blaze on Google Play"
+      href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us">
+      <img class="btn-icon" src="./img/google_download.svg" alt="google play logo" />
+      <p>
+        <span class="btn-text-small">Download on</span>
+        <span class="btn-text-big">Google Play</span>
+      </p>
+    </a>
+  </div>
+</section> -->
+
+
+<section class="hero">
+  <div class="hero-wrapper container">
+
+    <div class="hero-text-button-container">
+      <h1 class="hero-title">Robot Blaze dash adventure</h1>
+      <p class="hero-text">Dash Through the Future!</p>
+
+      <a class="download-button-hero" id="display-none" aria-label="Download Robot Blaze on Google Play"
+        href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us">
+        <img class="btn-icon" src="./img/Frame.svg" alt="google play logo" />
+        <p>
+          <!-- <span class="btn-text-small">Download on</span> -->
+          <span class="btn-text-btn">Play now</span>
+        </p>
+      </a>
+    </div>
+
+    <picture class="hero-image">
+      <source srcset="./img/hero-img/hero-mobile-x1.png" media="(max-width: 1199px)">
+      <source srcset="./img/hero-img/hero-desktop-x1.png" media="(min-width: 768px)">
+      <img id="image-hero" src="./img/hero-img/hero-desktop-x1.png" alt="Hero Image">
+    </picture>
+
+    <a class="download-button-mobile mobile-btn" aria-label="Download Robot Blaze on Google Play"
+      href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us">
+      <img id="image-btn" src="./img/google_download.png" alt="google play logo" />
+      <p>
+        <!-- <span class="btn-text-small">Download on</span> -->
+        <span class="btn-text-big">Play now</span>
+      </p>
+    </a>
+
   </div>
 </section>
