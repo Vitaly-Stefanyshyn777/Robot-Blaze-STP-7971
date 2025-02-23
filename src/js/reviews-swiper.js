@@ -10,12 +10,12 @@ let swiper;
 
 const handleResizeScrean = () => {
   const isDesktop = window.matchMedia("(min-width: 1200px)").matches;
+
   if (isDesktop) {
     if (swiper) {
       swiper.destroy(true, true);
       swiper = null;
     }
-
     swiperWrapper.classList.remove("mobile-style");
     swiperWrapper.classList.add("desktop-style");
   } else {
@@ -25,8 +25,11 @@ const handleResizeScrean = () => {
 
       swiper = new Swiper(".swiper-reviews", {
         loop: true,
-        slidesPerView: 1,
+        slidesPerView: "auto",
         spaceBetween: 10,
+
+        slideClass: "swiper-slide-v", // Використовуємо кастомний клас
+        wrapperClass: "swiper-wrapper-reviews", // Використовуємо кастомний wrapper
 
         keyboard: {
           enabled: true,
@@ -52,3 +55,4 @@ const handleResizeScrean = () => {
 };
 
 handleResizeScrean();
+window.addEventListener("resize", handleResizeScrean); // Додаємо слухач подій

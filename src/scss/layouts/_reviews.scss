@@ -38,7 +38,7 @@
   @include media(desktop) {
     border-radius: 20px;
     width: 289px;
-    height: 317px;
+    // height: 317px;
     background: rgba(17, 89, 107, 0.5);
     padding: 24px; /* Трохи більше відступів для desktop */
     border-radius: 20px;
@@ -87,9 +87,34 @@
   justify-content: center;
 }
 
-.desktop-style .swiper-slide {
+.desktop-style .swiper-slide-v {
   display: block;
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swiper-slide-v {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 238px;
+  height: 241px;
+  border-radius: 10px;
+  background: rgba(17, 89, 107, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+  @include media(desktop) {
+    // display: block;
+    // width: auto;
+    // display: flex;
+    // flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .reviews-card-box {
@@ -188,4 +213,14 @@
 }
 #reviews-btn-next {
   margin-right: -10px;
+}
+
+.swiper-wrapper-reviews {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
 }
