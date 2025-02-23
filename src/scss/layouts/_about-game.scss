@@ -109,3 +109,21 @@
     color: #fff;
   }
 }
+
+.title-about-game {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.1em;
+  text-align: center;
+  margin-bottom: 35px;
+  font-style: normal;
+  @include media(desktop) {
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+}

@@ -10,7 +10,7 @@ import {
 } from "swiper/modules";
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
+  slidesPerView: "auto",
   spaceBetween: 20,
   modules: [Navigation, Keyboard, Pagination, EffectCreative],
   navigation: {
