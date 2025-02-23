@@ -45,9 +45,8 @@ const swiperGallery = new Swiper(".swiper-gallery", {
 
   breakpoints: {
     1200: {
-      slidesPerView: "auto",
-      spaceBetween: 10,
-      centeredSlides: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
       effect: "creative",
       creativeEffect: {
         limitProgress: 2,
