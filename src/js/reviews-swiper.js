@@ -8,7 +8,37 @@ const swiperWrapper = document.querySelector(".swiper-wrapper");
 
 let swiper;
 
-const handleResizeScrean = () => {
+const initSwiper = () => {
+  swiper = new Swiper(".swiper-reviews", {
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 10,
+
+    slideClass: "swiper-slide-v",
+    wrapperClass: "swiper-wrapper-reviews",
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+
+    pagination: {
+      el: "#reviews-pagination",
+      bulletClass: "pagination-btn",
+      bulletActiveClass: "pagination-btn--active",
+      clickable: true,
+    },
+
+    modules: [Navigation, Keyboard, Pagination],
+
+    navigation: {
+      nextEl: "#reviews-btn-next",
+      prevEl: "#reviews-btn-prev",
+    },
+  });
+};
+
+const handleResizeScreen = () => {
   const isDesktop = window.matchMedia("(min-width: 1200px)").matches;
 
   if (isDesktop) {
@@ -16,43 +46,22 @@ const handleResizeScrean = () => {
       swiper.destroy(true, true);
       swiper = null;
     }
-    swiperWrapper.classList.remove("mobile-style");
-    swiperWrapper.classList.add("desktop-style");
+    swiperWrapper.classList.replace("mobile-style", "desktop-style");
   } else {
     if (!swiper) {
-      swiperWrapper.classList.remove("desktop-style");
-      swiperWrapper.classList.add("mobile-style");
-
-      swiper = new Swiper(".swiper-reviews", {
-        loop: true,
-        slidesPerView: "auto",
-        spaceBetween: 10,
-
-        slideClass: "swiper-slide-v", // Використовуємо кастомний клас
-        wrapperClass: "swiper-wrapper-reviews", // Використовуємо кастомний wrapper
-
-        keyboard: {
-          enabled: true,
-          onlyInViewport: true,
-        },
-
-        pagination: {
-          el: "#reviews-pagination",
-          bulletClass: "pagination-btn",
-          bulletActiveClass: "pagination-btn--active",
-          clickable: true,
-        },
-
-        modules: [Navigation, Keyboard, Pagination],
-
-        navigation: {
-          nextEl: "#reviews-btn-next",
-          prevEl: "#reviews-btn-prev",
-        },
-      });
+      swiperWrapper.classList.replace("desktop-style", "mobile-style");
+      initSwiper();
     }
   }
 };
 
-handleResizeScrean();
-window.addEventListener("resize", handleResizeScrean); // Додаємо слухач подій
+const debounce = (func, delay) => {
+  let timeout;
+  return () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(func, delay);
+  };
+};
+
+handleResizeScreen();
+window.addEventListener("resize", debounce(handleResizeScreen, 200));
