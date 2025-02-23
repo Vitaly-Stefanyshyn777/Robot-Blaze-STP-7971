@@ -5,50 +5,59 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const swiperWrapper = document.querySelector(".swiper-wrapper");
-
 let swiper;
 
-const handleResizeScrean = () => {
+const initSwiper = () => {
+  swiper = new Swiper(".swiper-reviews", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+
+    pagination: {
+      el: "#reviews-pagination",
+      bulletClass: "pagination-btn",
+      bulletActiveClass: "pagination-btn--active",
+      clickable: true,
+    },
+
+    modules: [Navigation, Keyboard, Pagination],
+
+    navigation: {
+      nextEl: "#reviews-btn-next",
+      prevEl: "#reviews-btn-prev",
+    },
+  });
+};
+
+const handleResizeScreen = () => {
   const isDesktop = window.matchMedia("(min-width: 1200px)").matches;
+
   if (isDesktop) {
     if (swiper) {
       swiper.destroy(true, true);
       swiper = null;
     }
-
-    swiperWrapper.classList.remove("mobile-style");
-    swiperWrapper.classList.add("desktop-style");
+    swiperWrapper.classList.replace("mobile-style", "desktop-style");
   } else {
     if (!swiper) {
-      swiperWrapper.classList.remove("desktop-style");
-      swiperWrapper.classList.add("mobile-style");
-
-      swiper = new Swiper(".swiper-reviews", {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 10,
-
-        keyboard: {
-          enabled: true,
-          onlyInViewport: true,
-        },
-
-        pagination: {
-          el: "#reviews-pagination",
-          bulletClass: "pagination-btn",
-          bulletActiveClass: "pagination-btn--active",
-          clickable: true,
-        },
-
-        modules: [Navigation, Keyboard, Pagination],
-
-        navigation: {
-          nextEl: "#reviews-btn-next",
-          prevEl: "#reviews-btn-prev",
-        },
-      });
+      swiperWrapper.classList.replace("desktop-style", "mobile-style");
+      initSwiper();
     }
   }
 };
 
-handleResizeScrean();
+const debounce = (func, delay) => {
+  let timeout;
+  return () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(func, delay);
+  };
+};
+
+handleResizeScreen();
+window.addEventListener("resize", debounce(handleResizeScreen, 200));
