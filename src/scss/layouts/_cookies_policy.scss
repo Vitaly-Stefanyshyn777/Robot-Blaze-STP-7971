@@ -1,0 +1,99 @@
+/* Батьківський контейнер .cookies_policy відповідає .policy */
+.cookies_policy {
+  padding-top: 60px;
+
+  @include media(desktop) {
+    padding-top: 100px;
+  }
+}
+
+/* Заголовок h1 .cookies_title відповідає .policy-header */
+.cookies_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+}
+
+/* Підзаголовки .cookies_subtitle, .cookies_h3_title, .cookies_subtitle_2
+   відповідають .policy-sub-header */
+.cookies_subtitle,
+.cookies_h3_title,
+.cookies_subtitle_2 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 2;
+
+  @include media(desktop) {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+/* Абзаци .cookies_text відповідають .paragraph */
+.cookies_text {
+  margin-bottom: 30px;
+  font-size: 14px;
+
+  @include media(desktop) {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+/* Якщо є абзаци без відступів .cookies_text.cookies_end 
+   або інші класи типу .no-margin-paragraph, можна додати: */
+.cookies_text.cookies_end {
+  margin-bottom: 0; /* або інше значення */
+}
+
+/* Список .cookies_list_text відповідає .policy-list */
+.cookies_list_text {
+  font-size: 14px;
+  list-style-type: disc;
+  margin-left: 22px;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Аналог .policy li::marker */
+.cookies_list_text li::marker {
+  font-size: 0.6em; /* Зменшений маркер */
+}
+
+/* Посилання .cookies_item_link відповідає .policy-link */
+.cookies_item_link {
+  text-decoration: underline;
+  transition: color 300ms ease;
+
+  &:hover,
+  &:focus {
+    color: $_hight_green_swiper; /* змінна з твоїх SCSS-змінних, за потребою */
+  }
+}
+
+/* Якщо потрібно, можна додати аналог .download-btn-policy,
+   наприклад, .cookies_download_btn:
+*/
+.cookies_download_btn {
+  display: flex;
+  width: 274px;
+  height: 60px;
+  margin-top: 70px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}

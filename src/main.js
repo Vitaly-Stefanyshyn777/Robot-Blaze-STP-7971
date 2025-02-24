@@ -3,3 +3,4 @@ import "./js/reviews-swiper";
 import "./js/gallery-swiper";
 import "./js/adventages-swiper.js";
 import "./js/cookies-banner.js";
+import "./js/cookies-pop.js";
