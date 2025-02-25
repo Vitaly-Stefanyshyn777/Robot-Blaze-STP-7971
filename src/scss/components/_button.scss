@@ -129,7 +129,9 @@
 
 .back-home-link:hover,
 .back-home-link:focus {
-  box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  @include media(desktop) {
+    box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
 }
 
 .back-home-link:active {
