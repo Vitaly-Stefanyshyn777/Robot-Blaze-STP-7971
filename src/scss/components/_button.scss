@@ -65,6 +65,8 @@
 // swiper btn
 .reviews-btn {
   border: none;
+  outline: none;
+  box-shadow: none;
   border-radius: 100%;
   width: 30px;
   height: 30px;
@@ -93,7 +95,9 @@
 }
 
 .reviews-btn:hover {
-  box-shadow: inset -4px -4px 4px 0px rgba(0, 0, 0, 0.25);
+  @include media(desktop) {
+    box-shadow: inset -4px -4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .reviews-btn:active {
