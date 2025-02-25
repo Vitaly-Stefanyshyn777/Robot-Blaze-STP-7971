@@ -127,12 +127,12 @@
   }
 }
 
-.back-home-link:hover,
-.back-home-link:focus {
-  @include media(desktop) {
-    box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  }
-}
+// .back-home-link:hover,
+// .back-home-link:focus {
+//   @include media(desktop) {
+//     box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+//   }
+// }
 
 .back-home-link:active {
   // box-shadow: -4px -4px 20px 0px #ff6f00 inset;
