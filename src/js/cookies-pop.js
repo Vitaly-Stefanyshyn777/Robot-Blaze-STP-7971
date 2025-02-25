@@ -1,18 +1,19 @@
-const cookiesPopup = document.getElementById("cookiesPop");
-const acceptBtn = document.querySelector(".cookies-accept");
-const declneBtn = document.querySelector(".cookies-decline");
+document.addEventListener("DOMContentLoaded", () => {
+  const cookiesPopup = document.getElementById("cookiesPop");
+  const acceptBtn = document.querySelector(".cookies-accept");
+  const declineBtn = document.querySelector(".cookies-decline");
 
-declneBtn.addEventListener("click", () => {
-  cookiesPopup.style.display = "none";
+  const hideCookiesPopup = (status) => {
+    cookiesPopup.style.display = "none";
+    localStorage.setItem("cookies", status);
+  };
+
+  if (localStorage.getItem("cookies")) {
+    cookiesPopup.style.display = "none";
+  } else {
+    cookiesPopup.style.display = "block";
+  }
+
+  acceptBtn.addEventListener("click", () => hideCookiesPopup("accepted"));
+  declineBtn.addEventListener("click", () => hideCookiesPopup("declined"));
 });
-
-acceptBtn.addEventListener("click", () => {
-  cookiesPopup.style.display = "none";
-  localStorage.setItem("cookies", "accepted");
-});
-
-if (!localStorage.getItem("cookies")) {
-  cookiesPopup.style.display = "block";
-} else {
-  // cookiesPopup.style.display = "none";
-}

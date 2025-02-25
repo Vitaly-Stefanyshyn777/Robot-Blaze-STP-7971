@@ -91,7 +91,7 @@
   color: #fff;
   padding: 0 15px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 798px) {
     font-size: 14px; /* Менший шрифт */
     max-width: 320px; /* Обмежуємо ширину для читабельності */
     // margin: 0 auto 30px; /* Менший відступ знизу */
@@ -125,5 +125,20 @@
     text-align: center;
     color: #fff;
     margin-bottom: 50px;
+  }
+}
+
+.reviews-btn-v {
+  border: none;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #177086;
+  @include media(desktop) {
+    width: 40px;
+    height: 40px;
   }
 }
