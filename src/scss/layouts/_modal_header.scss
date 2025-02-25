@@ -34,7 +34,7 @@
 }
 
 .backdrop.is-open .mob-wrap {
-  right: 24px;
+  right: calc(50% - 256px / 2);
   opacity: 1;
 }
 
