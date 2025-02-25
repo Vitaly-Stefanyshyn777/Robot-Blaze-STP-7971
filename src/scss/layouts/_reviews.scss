@@ -559,8 +559,8 @@
 .review-nav {
   position: absolute; /* Виймаємо з потоку */
   top: 50%; /* 50% від висоти батьківського блоку */
-  left: 0;
-  right: 0;
+  left: 20px;
+  right: 16px;
   transform: translateY(-50%); /* Підтягуємо вгору на половину власної висоти */
 
   display: flex;

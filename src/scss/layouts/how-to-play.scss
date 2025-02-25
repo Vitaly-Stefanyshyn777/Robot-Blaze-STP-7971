@@ -7,7 +7,10 @@
 }
 
 .our-uniques {
-  margin-top: 134px;
+  margin-top: 50px;
+  @include media(desktop) {
+    margin-top: 112px;
+  }
 }
 
 .title {
