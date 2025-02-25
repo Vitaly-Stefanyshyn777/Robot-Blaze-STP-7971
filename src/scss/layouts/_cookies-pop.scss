@@ -326,7 +326,6 @@
     font-family: "Open Sans", sans-serif;
     // font-size: 16px;
     line-height: 1.36;
-    text-transform: uppercase;
     // border-radius: 10px;
     // border: none;
     cursor: pointer;
@@ -338,15 +337,12 @@
 
 /* Приклад стилів кнопок */
 .cookies-accept {
+  border: none;
+  color: #fff;
   border-radius: 16px;
   width: 141px;
   height: 34px;
-  background: linear-gradient(
-    43deg,
-    rgba(23, 112, 134, 0.9) 0%,
-    rgba(93, 170, 189, 0.9) 51%,
-    rgba(93, 170, 189, 0.9) 100%
-  );
+  background: linear-gradient(43deg, #177086, #5daabd 51%, #5daabd);
   @include media(desktop) {
     background-color: #fff;
     background: linear-gradient(
