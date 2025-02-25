@@ -135,8 +135,13 @@
     </div>
     <div class="review-nav">
       <button class="reviews-btn" id="reviews-btn-prev" type="button">
-        <svg class="review-svg" width="24" height="24">
-          <use href="./img/sprite.svg#icon-arrowsmallleft"></use>
+        <img class="review-svg" srcset="
+                                            ../img/about-game-section-img/weui_arrow-filled (3).png 185w,
+                                            ../img/about-game-section-img/weui_arrow-filled (3).png 352w,
+                                             
+                                          " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+          src="../img/about-game-section-img/weui_arrow-filled (3).png" alt=" Screenshot 1" loading="lazy" />
+        <use href="./img/sprite.svg#icon-arrowsmallleft"></use>
         </svg>
       </button>
       <!-- <div class="pagination" id="reviews-pagination">
@@ -148,9 +153,15 @@
         </div> -->
 
       <button class="reviews-btn" id="reviews-btn-next" type="button">
-        <svg class="review-svg" width="24" height="24">
-          <use href="./img/sprite.svg#icon-arrowsmallright"></use>
-        </svg>
+
+        <img class="review-svg" srcset="
+                                      ../img/about-game-section-img/weui_arrow-filled.png 185w,
+                                      ../img/about-game-section-img/weui_arrow-filled.png 352w,
+                                       
+                                    " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+          src="../img/about-game-section-img/weui_arrow-filled.png" alt=" Screenshot 1" loading="lazy" />
+        <use href="./img/sprite.svg#icon-arrowsmallright"></use>
+
       </button>
     </div>
 
