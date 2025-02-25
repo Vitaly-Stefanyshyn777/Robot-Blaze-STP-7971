@@ -17,17 +17,16 @@
 
 .mob-wrap {
   position: absolute;
-  left: 53%;
-  top: 0;
+  right: -100%;
+  top: 50px;
   // width: 208px;
-  padding: 18px 32px 16px 28px;
+  padding: 16px 21px 10px 16px;
   // background-color: $_hight_green_swiper;
   // border-radius: 10px 0px 0px 10px;
   background: #034a5b;
   z-index: 999;
   opacity: 0;
-  transition: transform 500ms ease, opacity 500ms ease;
-  transform: translate(100%, 10%);
+  transition: left 500ms ease, opacity 500ms ease;
 
   border-radius: 0 0 28px 28px;
   // width: 137px;
@@ -35,7 +34,7 @@
 }
 
 .backdrop.is-open .mob-wrap {
-  transform: translate(-34%, 5%);
+  right: 24px;
   opacity: 1;
 }
 

@@ -26,7 +26,6 @@
     if (!isMenuOpen) {
       document.body.classList.add("no-scroll");
       const headerHeight = header.offsetHeight;
-      mobileMenu.style.top = `${headerHeight}px`;
     } else {
       document.body.classList.remove("no-scroll");
     }
