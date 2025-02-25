@@ -10,12 +10,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <title>Robot Blaze</title>
   <script type="module" crossorigin src="/Robot-Blaze-STP-7971/commonHelpers2.js"></script>
   <link rel="modulepreload" crossorigin href="/Robot-Blaze-STP-7971/assets/vendor-a2f39585.js">
   <link rel="stylesheet" href="/Robot-Blaze-STP-7971/assets/vendor-15e0163c.css">
-  <link rel="stylesheet" href="/Robot-Blaze-STP-7971/assets/styles-01e69ec5.css">
+  <link rel="stylesheet" href="/Robot-Blaze-STP-7971/assets/styles-29e9ecbc.css">
 </head>
 
 <body>
@@ -94,7 +96,7 @@
   </div>
 </header> -->
 
-<header class="container header">
+<header class="container header ">
   <div class="header-wraper">
     <!-- Логотип окремо від навігації -->
     <div class="header-logo-wraper">
@@ -180,54 +182,33 @@
   </div>
 </section> -->
 
-<section class="hero">
-  <div class="hero-wrapper container">
+<section class="hero ">
+  <div class="hero-wrapper container ">
     <div class="hero-text-button-container">
       <h1 class="hero-title">Robot Blaze dash adventure</h1>
       <p class="hero-text">Dash Through the Future!</p>
 
-      <a
-        class="download-button-hero"
-        id="display-none"
-        aria-label="Download Robot Blaze on Google Play"
-        href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us"
-      >
+      <a class="download-button-hero " id="display-none" aria-label="Download Robot Blaze on Google Play"
+        href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us" target="_blank"
+        rel="noopener noreferrer">
         <img class="btn-icon" src="/Robot-Blaze-STP-7971/assets/Frame-99d84b90.svg" alt="google play logo" />
         <p>
-          <!-- <span class="btn-text-small">Download on</span> -->
           <span class="btn-text-btn">Play now</span>
         </p>
       </a>
     </div>
 
     <picture class="hero-image">
-      <source
-        srcset="/Robot-Blaze-STP-7971/assets/hero-mobile-x1-7c6b28ae.png "
-        media="(max-width: 1199px)"
-      />
-      <source
-        srcset="/Robot-Blaze-STP-7971/assets/hero-desktop-x1-5bf9c7ec.png "
-        media="(min-width: 768px)"
-      />
-      <img
-        id="image-hero"
-        src="/Robot-Blaze-STP-7971/assets/hero-desktop-x1-5bf9c7ec.png"
-        alt="Hero Image"
-      />
+      <source srcset="/Robot-Blaze-STP-7971/assets/hero-mobile-x1-7c6b28ae.png " media="(max-width: 1199px)" />
+      <source srcset="/Robot-Blaze-STP-7971/assets/hero-desktop-x1-5bf9c7ec.png " media="(min-width: 768px)" />
+      <img id="image-hero" src="/Robot-Blaze-STP-7971/assets/hero-desktop-x1-5bf9c7ec.png" alt="Hero Image" />
     </picture>
 
-    <a
-      class="download-button-mobile mobile-btn"
-      aria-label="Download Robot Blaze on Google Play"
-      href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us"
-    >
-      <img
-        id="image-btn"
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANySURBVHgB1ZbPTxNREMdnwAQkKBBj4gGh/gXy4yAXsfwMwYP15o3KwYAnOAgkHoD/APFqUuCCiSZwMh5QaryYmMgvgZMpmkihQGypP1K7+8aZ93Zr1xSlojFO87b73uzOZ78z87YF+JfWMBPw+WcC5fAHDbMnEvyTlZrhZT9Pib2ThYVq9MXVxxtwRCvInrzbr+/TEGKKIiSbgtZXjNTf7wg1THf44AjmAUX2go3v45eBbAWgSA8GAhIE00QLddPtw/Cb5gGRsjCa6IRNHgJQxCbfNgNtKgcLRmqn2iN1U21ByNM8IFQWSNToficJEGxCrYo0EpyDj4+hmlBbpCbU6odDmgfEEB4Msy3cTLRDNNEhSnjO2ROWLXVTklqRWs3f8+fvtTDU78sPZKU1RGDSCVv77TJMzVx1Jo0IlsxBfMEbZwoitN4SovWDG8ZbI/mwKtKqbK1wK+HC2GeZ5mAou5QM6qkE6K1CaZwuUOl5Wmke/iUILUunDrNSSHYat/fbaCvRqoOTpXhZK4TeSsTeau5JJWlHUejjKCO01ByhpZauA0EcRUMcVciqSEMZFku2wHay1QRlSM9ZNEq4ftKe7nYQHyfGx+cTtNDclxtkm7RJ96FOHcPIrMmIJZtwO9mkATer+FZyARkYaZCdgV5xQx/zCBJF8kA8OBE6Tiat4iHC7jdl0F1UBlCdJA1wqqtfWM4pX8rXmgg5QWhb5jqDQxNaM7V7MPYKhniktk7IE2OxP0k5Afp2vTqZEwSK7za9575sBaYjDMYWcCi2IGiJhamnpSS+oktJI90AUcMUvOWi9OOF8OwBoDSaNLkPZGIM7SzD4M4imIya1xKf4Zf5Uq6douKLH11VcV6/AyUwhrXheHboHDVCpyZaGgzsLKEMMImUpnPKZy5kmOxtOt74eVzehdjkBeSukewjzPxEMWCFU7as6yTVMmUwdXMbhg/h1POT10tuP9qAn5hXkVKOGoKB3VUa2F0xJaLv/UNarCaFWcjo6bmHYTiEeRXJ5uQwt3ZXOWWvgbJ9AG5HbrC20VNzDyYgD/tBkQUDe2usZs15cnA2kz6Nc7eNF6r0WMWT2TjkaR7Q3ejLZ9fiG34pM2YambuAaCwJavTcfP4A1zx/Tj74A+UWFIRYWsApRfgYUH9FeHYR/oZFGBj1B3zwP9o3l75iPzqtthYAAAAASUVORK5CYII="
-        alt="google play logo"
-      />
+    <a class="download-button-mobile mobile-btn" id="j" aria-label="Download Robot Blaze on Google Play"
+      href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us" target="_blank"
+      rel="noopener noreferrer">
+      <img id="image-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANySURBVHgB1ZbPTxNREMdnwAQkKBBj4gGh/gXy4yAXsfwMwYP15o3KwYAnOAgkHoD/APFqUuCCiSZwMh5QaryYmMgvgZMpmkihQGypP1K7+8aZ93Zr1xSlojFO87b73uzOZ78z87YF+JfWMBPw+WcC5fAHDbMnEvyTlZrhZT9Pib2ThYVq9MXVxxtwRCvInrzbr+/TEGKKIiSbgtZXjNTf7wg1THf44AjmAUX2go3v45eBbAWgSA8GAhIE00QLddPtw/Cb5gGRsjCa6IRNHgJQxCbfNgNtKgcLRmqn2iN1U21ByNM8IFQWSNToficJEGxCrYo0EpyDj4+hmlBbpCbU6odDmgfEEB4Msy3cTLRDNNEhSnjO2ROWLXVTklqRWs3f8+fvtTDU78sPZKU1RGDSCVv77TJMzVx1Jo0IlsxBfMEbZwoitN4SovWDG8ZbI/mwKtKqbK1wK+HC2GeZ5mAou5QM6qkE6K1CaZwuUOl5Wmke/iUILUunDrNSSHYat/fbaCvRqoOTpXhZK4TeSsTeau5JJWlHUejjKCO01ByhpZauA0EcRUMcVciqSEMZFku2wHay1QRlSM9ZNEq4ftKe7nYQHyfGx+cTtNDclxtkm7RJ96FOHcPIrMmIJZtwO9mkATer+FZyARkYaZCdgV5xQx/zCBJF8kA8OBE6Tiat4iHC7jdl0F1UBlCdJA1wqqtfWM4pX8rXmgg5QWhb5jqDQxNaM7V7MPYKhniktk7IE2OxP0k5Afp2vTqZEwSK7za9575sBaYjDMYWcCi2IGiJhamnpSS+oktJI90AUcMUvOWi9OOF8OwBoDSaNLkPZGIM7SzD4M4imIya1xKf4Zf5Uq6douKLH11VcV6/AyUwhrXheHboHDVCpyZaGgzsLKEMMImUpnPKZy5kmOxtOt74eVzehdjkBeSukewjzPxEMWCFU7as6yTVMmUwdXMbhg/h1POT10tuP9qAn5hXkVKOGoKB3VUa2F0xJaLv/UNarCaFWcjo6bmHYTiEeRXJ5uQwt3ZXOWWvgbJ9AG5HbrC20VNzDyYgD/tBkQUDe2usZs15cnA2kz6Nc7eNF6r0WMWT2TjkaR7Q3ejLZ9fiG34pM2YambuAaCwJavTcfP4A1zx/Tj74A+UWFIRYWsApRfgYUH9FeHYR/oZFGBj1B3zwP9o3l75iPzqtthYAAAAASUVORK5CYII=" alt="google play logo" />
       <p>
-        <!-- <span class="btn-text-small">Download on</span> -->
         <span class="btn-text-big">Play now</span>
       </p>
     </a>
@@ -251,7 +232,6 @@
     </div>
   </div>
 </section>
-
     <!--  Gallery section -->
     <section class="gallery" id="about-game">
   <div class="container gallery-container">
@@ -281,10 +261,21 @@
 
     <div class="gellary-swiper-container">
       <!-- Кнопка "Назад" -->
-      <button class="reviews-btn" id="gallery-btn-prev" type="button">
-        <svg class="review-svg" width="24" height="24">
-          <use href="/Robot-Blaze-STP-7971/assets/sprite-640aaf09.svg#icon-arrowsmallleft"></use>
-        </svg>
+      <button class="reviews-btn-v" id="gallery-btn-prev" type="button">
+        <!-- <svg class="review-svg" width="24" height="24">
+          <use href="./img/sprite.svg#icon-arrowsmallleft"></use>
+        </svg> -->
+        <!-- <img class="review-svg" src="../img/about-game-section-img/weui_arrow-filled (1).png" alt="Screenshot 1"
+          width="24" height="24" loading="lazy" /> -->
+
+        <img class="review-svg" srcset="
+                            ../img/about-game-section-img/weui_arrow-filled (3).png 185w,
+                            ../img/about-game-section-img/weui_arrow-filled (3).png 352w,
+                             
+                          " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+          src="../img/about-game-section-img/weui_arrow-filled (1).png" alt=" Screenshot 1" loading="lazy" />
+        </li>
+
       </button>
 
       <div class="gallery-swiper-only">
@@ -328,16 +319,19 @@
       </div>
 
       <!-- Кнопка "Вперед" -->
-      <button class="reviews-btn" id="gallery-btn-next" type="button">
-        <svg class="review-svg" width="24" height="24">
-          <use href="/Robot-Blaze-STP-7971/assets/sprite-640aaf09.svg#icon-arrowsmallright"></use>
-        </svg>
+      <button class="reviews-btn-v" id="gallery-btn-next" type="button">
+        <img class="review-svg" srcset="
+                                    ../img/about-game-section-img/weui_arrow-filled.png 185w,
+                                    ../img/about-game-section-img/weui_arrow-filled.png 352w,
+                                     
+                                  " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+          src="../img/about-game-section-img/weui_arrow-filled.png" alt=" Screenshot 1" loading="lazy" />
       </button>
     </div>
   </div>
 </section>
     <!-- About us section -->
-    <section class="adventages-section">
+    <section class="adventages-section " id="adventages">
   <div class="container">
     <h2 class="title desk-title">Adventages</h2>
     <div class="adv-container">
@@ -354,11 +348,7 @@
       <div class="swiper mySwiper">
         <ul class="swiper-wrapper">
           <li class="swiper-slide adv-item">
-            <img
-              class="about-list-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD5SURBVHgBrVQLEcMgDM1qYEiohEmoBCRUQh10DloHlTAJlVAJSGAOMrhjt7eMUNrbu0s/gTySR4CY2dAf0cRHIHXBeiRP/yOdQSLk9DbJZ4L5YFuw9ghfDJ75Awv+ByzUHyG0QLiAv+NvTFWap/Le8MLvBamrkiBMWiGoo7wciHGPEAPnQtmIVc1WBHox5gukjnMbltGrU7LXMMW5jeDFHXzC95X2cWHsAFGyE9m7QmYeqyGlrFIvIlYubMrGef0WhWwgDaw0dhrLNfaNSmD96FlBFmWpOnoLBNmM36O/hnCDQLy+ysIrZG0iuvPvBTvQUaRMTG4hOoEXKduWIf4l2tQAAAAASUVORK5CYII="
-              alt="High-Speed Action"
-            />
+            <img class="about-list-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD5SURBVHgBrVQLEcMgDM1qYEiohEmoBCRUQh10DloHlTAJlVAJSGAOMrhjt7eMUNrbu0s/gTySR4CY2dAf0cRHIHXBeiRP/yOdQSLk9DbJZ4L5YFuw9ghfDJ75Awv+ByzUHyG0QLiAv+NvTFWap/Le8MLvBamrkiBMWiGoo7wciHGPEAPnQtmIVc1WBHox5gukjnMbltGrU7LXMMW5jeDFHXzC95X2cWHsAFGyE9m7QmYeqyGlrFIvIlYubMrGef0WhWwgDaw0dhrLNfaNSmD96FlBFmWpOnoLBNmM36O/hnCDQLy+ysIrZG0iuvPvBTvQUaRMTG4hOoEXKduWIf4l2tQAAAAASUVORK5CYII=" alt="High-Speed Action" />
             <h3 class="customization-title">High-Speed Action</h3>
             <p class="about-list-text">
               Dash at lightning speed through futuristic environments,
@@ -367,11 +357,8 @@
           </li>
 
           <li class="swiper-slide adv-item">
-            <img
-              class="about-list-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFASURBVHgBvVNRccMwDHV6A+AhmBnUEDIGgVAIY5AbgkBoGGRD0FAYgoRBxiCzrk+3Z82+rh+b7l7t6knPkuw491+277vHGhIGIDB3j1ifsEgiVjX29feIqcWEFqvuA/H9LTFb0Qn/zwkj9h3x2832UcGIhAv+dxCX/cTcb8QmupAWVU2oUitUXvyxJhYRHIxvMS1GM6K2WCkSf8zEtOwrM8/zcIrai0liLhqOL6gT3wFcS3FHrg7bGfCmPc6LLMitPJLYkLA2TfMskH3CmUQ570l+GiRHIj+RKC3MSWh1eZse3FtCoLw1i8VwF9ysDHlwFduv3/VGr2CpBXq8N7VQiOFP70JVV0/fajcO/mTeZSZ2sKe762xmuI6FM/XpzEAm+ODKJqIfFUHxvSZsJF6ukAJkHd13pWzvOFBjO/eX9gXI8/oGH31RBgAAAABJRU5ErkJggg=="
-              alt="Robot Customization"
-            />
+            <img class="about-list-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFASURBVHgBvVNRccMwDHV6A+AhmBnUEDIGgVAIY5AbgkBoGGRD0FAYgoRBxiCzrk+3Z82+rh+b7l7t6knPkuw491+277vHGhIGIDB3j1ifsEgiVjX29feIqcWEFqvuA/H9LTFb0Qn/zwkj9h3x2832UcGIhAv+dxCX/cTcb8QmupAWVU2oUitUXvyxJhYRHIxvMS1GM6K2WCkSf8zEtOwrM8/zcIrai0liLhqOL6gT3wFcS3FHrg7bGfCmPc6LLMitPJLYkLA2TfMskH3CmUQ570l+GiRHIj+RKC3MSWh1eZse3FtCoLw1i8VwF9ysDHlwFduv3/VGr2CpBXq8N7VQiOFP70JVV0/fajcO/mTeZSZ2sKe762xmuI6FM/XpzEAm+ODKJqIfFUHxvSZsJF6ukAJkHd13pWzvOFBjO/eX9gXI8/oGH31RBgAAAABJRU5ErkJggg=="
+              alt="Robot Customization" />
             <h3 class="customization-title">Robot Customization</h3>
             <p class="about-list-text">
               Upgrade and personalize your robot with a variety of futuristic
@@ -380,11 +367,8 @@
           </li>
 
           <li class="swiper-slide adv-item">
-            <img
-              class="about-list-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADaSURBVHgB7VNtEcIwDE2nAAl1wCQgYRJwwByAg+FgOEDCcMAcTAJ1EJK77GhLadduP3l32domee9ePwAKgYg1hYYtQEQH/KDnOawBEewoXujiyLkKMsFk9DvBWojNAcOYlpKwtZbiaTWz1asn0KeINMUZ3X3i8UUsz3W1HIrOsTUUnaIofdmK1DeecOcX3EO2IoQ3jxBhQRPv5WT1TLPYL8LUPawptDXncRNrqESt88RaySetBwkJrbe+h0JkP70/4SaEJpZU/Ak8sVEpZUI5Wn/Iugb3jhrKjW/YsFGCZe2ceAAAAABJRU5ErkJggg=="
-              alt="Challenging Obstacles"
-            />
+            <img class="about-list-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADaSURBVHgB7VNtEcIwDE2nAAl1wCQgYRJwwByAg+FgOEDCcMAcTAJ1EJK77GhLadduP3l32domee9ePwAKgYg1hYYtQEQH/KDnOawBEewoXujiyLkKMsFk9DvBWojNAcOYlpKwtZbiaTWz1asn0KeINMUZ3X3i8UUsz3W1HIrOsTUUnaIofdmK1DeecOcX3EO2IoQ3jxBhQRPv5WT1TLPYL8LUPawptDXncRNrqESt88RaySetBwkJrbe+h0JkP70/4SaEJpZU/Ak8sVEpZUI5Wn/Iugb3jhrKjW/YsFGCZe2ceAAAAABJRU5ErkJggg=="
+              alt="Challenging Obstacles" />
             <h3 class="customization-title">Challenging Obstacles</h3>
             <p class="about-list-text">
               Face increasingly difficult obstacles and enemy robots as you
@@ -393,11 +377,7 @@
           </li>
 
           <li class="swiper-slide adv-item">
-            <img
-              class="about-list-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVHgB7ZPhDYQgDIWbW+AcgRFc4TbwNnCE20A28jZwFN2Eo0nJNQRbEEz84Zc0GvL6Kg8EuLkkzrke6yw9Nhhfa04TmaPWQAmssa/RHB5SbS4ZNTNPGTY3TwwpMn9AOW9fG7Qkisi4s/KX1koMJ18z1ZBxTUfSLviumXfUxBkF/RBpV/WPZhkHvoJ21sxTtwjjeMH/pjxhn46eG/XIZ0L5O9p62MlH0Nvw5SyuSTO3bM2AAp5bNDA9hPK0UAkNWeAmlx8U935wUa0aPgAAAABJRU5ErkJggg=="
-              alt="Epic Boss Fights"
-            />
+            <img class="about-list-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVHgB7ZPhDYQgDIWbW+AcgRFc4TbwNnCE20A28jZwFN2Eo0nJNQRbEEz84Zc0GvL6Kg8EuLkkzrke6yw9Nhhfa04TmaPWQAmssa/RHB5SbS4ZNTNPGTY3TwwpMn9AOW9fG7Qkisi4s/KX1koMJ18z1ZBxTUfSLviumXfUxBkF/RBpV/WPZhkHvoJ21sxTtwjjeMH/pjxhn46eG/XIZ0L5O9p62MlH0Nvw5SyuSTO3bM2AAp5bNDA9hPK0UAkNWeAmlx8U935wUa0aPgAAAABJRU5ErkJggg==" alt="Epic Boss Fights" />
             <h3 class="customization-title">Epic Boss Fights</h3>
             <p class="about-list-text">
               Test your skills in intense boss battles, where quick reflexes and
@@ -406,11 +386,7 @@
           </li>
 
           <li class="swiper-slide adv-item">
-            <img
-              class="about-list-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEWSURBVHgB7ZXREYIwDECDE+AGjOAIjIAbdATdACdwBEZwBEbADeoGsEFMJdz1apXUUvzh3eWOQi6PpjkA2BCCiA3FFdaEpRMNrIEj7VeRW9KaouWok8ptKa9fYr5OI6eCOYWepK7YkpucHFLiikPZwZ8IEtMOS96ppqVpacHtNfdUSK0sJNlMz5fHQ5ZlexAi3jE5i5mUfNHBomIVt1OKDm37J3HnKd5xaPS/1M/Tbot7z45yJ9yX66Pbzq22UZ4c5eRUc3Ulw3UX5AzO+gGxeM6w9eQ0vuOAGPD9jJFFJR/DzfNcQyxU5IThKFgCHCe3FAgP0hYv+ckE+mSK64X+nS4wTqyZ4iPHwHGG1NjtxNQ//o2NUJ5c0Esh5l8TyQAAAABJRU5ErkJggg=="
-              alt="Power-Up System"
-            />
+            <img class="about-list-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEWSURBVHgB7ZXREYIwDECDE+AGjOAIjIAbdATdACdwBEZwBEbADeoGsEFMJdz1apXUUvzh3eWOQi6PpjkA2BCCiA3FFdaEpRMNrIEj7VeRW9KaouWok8ptKa9fYr5OI6eCOYWepK7YkpucHFLiikPZwZ8IEtMOS96ppqVpacHtNfdUSK0sJNlMz5fHQ5ZlexAi3jE5i5mUfNHBomIVt1OKDm37J3HnKd5xaPS/1M/Tbot7z45yJ9yX66Pbzq22UZ4c5eRUc3Ulw3UX5AzO+gGxeM6w9eQ0vuOAGPD9jJFFJR/DzfNcQyxU5IThKFgCHCe3FAgP0hYv+ckE+mSK64X+nS4wTqyZ4iPHwHGG1NjtxNQ//o2NUJ5c0Esh5l8TyQAAAABJRU5ErkJggg==" alt="Power-Up System" />
             <h3 class="customization-title">Power-Up System</h3>
             <p class="about-list-text">
               Collect power-ups that enhance your robot's speed, strength, and
@@ -419,11 +395,8 @@
           </li>
 
           <li class="swiper-slide adv-item">
-            <img
-              class="about-list-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgB7VLRDYIwEC3Ef2ECGYER2EA3ECcgTmCYQDYwToJOAE5AN4AN6mu8Js3lANFPfclLr9eXd9f2lPrjWwQ8YYyJsOzUPAawDYJAjypgVoC9WYbTmFnKhFPGOVh5+8z5hJ5nQasGY1wlxnoTrmlz9lk23vle6rCmapWXy1lnF8rb7muKGxfzDh22ECT0ObyyLdBgvYIPilNfIBkmYAf2YCacWwMNrrmZxUp9hvPYQajm0YIH8Khenb0H71N8dPSWThNRjkP8lLtQp8T4DG5DcSnotNRhRCNg+PgIWn+oazsVakKcTgoW6n4ATyIcLnLcnj/RAAAAAElFTkSuQmCC"
-              alt="Smooth and Intuitive Control"
-            />
+            <img class="about-list-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgB7VLRDYIwEC3Ef2ECGYER2EA3ECcgTmCYQDYwToJOAE5AN4AN6mu8Js3lANFPfclLr9eXd9f2lPrjWwQ8YYyJsOzUPAawDYJAjypgVoC9WYbTmFnKhFPGOVh5+8z5hJ5nQasGY1wlxnoTrmlz9lk23vle6rCmapWXy1lnF8rb7muKGxfzDh22ECT0ObyyLdBgvYIPilNfIBkmYAf2YCacWwMNrrmZxUp9hvPYQajm0YIH8Khenb0H71N8dPSWThNRjkP8lLtQp8T4DG5DcSnotNRhRCNg+PgIWn+oazsVakKcTgoW6n4ATyIcLnLcnj/RAAAAAElFTkSuQmCC"
+              alt="Smooth and Intuitive Control" />
             <h3 class="customization-title">Smooth and Intuitive Control</h3>
             <p class="about-list-text">
               Enjoy fluid gameplay with easy-to-learn controls that offer depth
@@ -432,11 +405,8 @@
           </li>
 
           <li class="swiper-slide adv-item">
-            <img
-              class="about-list-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGPSURBVHgB7VbRTcMwEL0g/gkT4BHKBmGDbkBGYAPKBMAEgQk6QmGCdIOkEyRMYN7RZ2QVSC+NEUjwpCfXZ9fvLj6fLfLXkMmB8N47NAXYg22WZWv5TkCwAFf+I2o6Y8KoiLHwHM0SbMF7mnP2r0EHloj+UVJBowE7Rpaz35COtppzckkFLFbxkzr2G4p0tM/ogGIhqcBoVlHfc69LFQpR0tbsW+9I7Ah7GXAj26yuwMvIvhEDxgi/g5/7BDynA9qfcVjtvaQCxO5C4kR76aN9dlECVjIFWGAZCVyxrTgWZ/VsZ76TKdBzy0g9kyiIq1gRJVZcVBaWtfcWEHqvWbomtYh8dU5b8Im/n1FIHuRQYYp72SaMNWmcOgDhC5mCsQljmW89ThrpqWUiC4lyk0K4Bc+Mc130n8nCGrG18OcphV/ELuzYDibisdjwFvFOYXB0JqZuRyGpXiS88jpvQx0q2RDMLxBGW7LbRm043z2iTHc5/AqwJt/6T542Q2MphMPtU4wZSyGsV+F87Ng/fhSv7RDVvcYy0SEAAAAASUVORK5CYII="
-              alt="Free-to-Play with Optional Purchases"
-            />
+            <img class="about-list-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGPSURBVHgB7VbRTcMwEL0g/gkT4BHKBmGDbkBGYAPKBMAEgQk6QmGCdIOkEyRMYN7RZ2QVSC+NEUjwpCfXZ9fvLj6fLfLXkMmB8N47NAXYg22WZWv5TkCwAFf+I2o6Y8KoiLHwHM0SbMF7mnP2r0EHloj+UVJBowE7Rpaz35COtppzckkFLFbxkzr2G4p0tM/ogGIhqcBoVlHfc69LFQpR0tbsW+9I7Ah7GXAj26yuwMvIvhEDxgi/g5/7BDynA9qfcVjtvaQCxO5C4kR76aN9dlECVjIFWGAZCVyxrTgWZ/VsZ76TKdBzy0g9kyiIq1gRJVZcVBaWtfcWEHqvWbomtYh8dU5b8Im/n1FIHuRQYYp72SaMNWmcOgDhC5mCsQljmW89ThrpqWUiC4lyk0K4Bc+Mc130n8nCGrG18OcphV/ELuzYDibisdjwFvFOYXB0JqZuRyGpXiS88jpvQx0q2RDMLxBGW7LbRm043z2iTHc5/AqwJt/6T542Q2MphMPtU4wZSyGsV+F87Ng/fhSv7RDVvcYy0SEAAAAASUVORK5CYII="
+              alt="Free-to-Play with Optional Purchases" />
             <h3 class="customization-title">
               Free-to-Play with Optional Purchases
             </h3>
@@ -450,7 +420,6 @@
     </div>
   </div>
 </section>
-
     <!-- Reviews section -->
     <section class="reviews-section" id="reviews-section">
   <div class="container reviews-container">
@@ -589,8 +558,13 @@
     </div>
     <div class="review-nav">
       <button class="reviews-btn" id="reviews-btn-prev" type="button">
-        <svg class="review-svg" width="24" height="24">
-          <use href="/Robot-Blaze-STP-7971/assets/sprite-640aaf09.svg#icon-arrowsmallleft"></use>
+        <img class="review-svg" srcset="
+                                            ../img/about-game-section-img/weui_arrow-filled (3).png 185w,
+                                            ../img/about-game-section-img/weui_arrow-filled (3).png 352w,
+                                             
+                                          " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+          src="../img/about-game-section-img/weui_arrow-filled (3).png" alt=" Screenshot 1" loading="lazy" />
+        <use href="/Robot-Blaze-STP-7971/assets/sprite-640aaf09.svg#icon-arrowsmallleft"></use>
         </svg>
       </button>
       <!-- <div class="pagination" id="reviews-pagination">
@@ -602,9 +576,15 @@
         </div> -->
 
       <button class="reviews-btn" id="reviews-btn-next" type="button">
-        <svg class="review-svg" width="24" height="24">
-          <use href="/Robot-Blaze-STP-7971/assets/sprite-640aaf09.svg#icon-arrowsmallright"></use>
-        </svg>
+
+        <img class="review-svg" srcset="
+                                      ../img/about-game-section-img/weui_arrow-filled.png 185w,
+                                      ../img/about-game-section-img/weui_arrow-filled.png 352w,
+                                       
+                                    " sizes="(min-width: 1200px) 352px, (max-width: 1199px) 185px"
+          src="../img/about-game-section-img/weui_arrow-filled.png" alt=" Screenshot 1" loading="lazy" />
+        <use href="/Robot-Blaze-STP-7971/assets/sprite-640aaf09.svg#icon-arrowsmallright"></use>
+
       </button>
     </div>
 
