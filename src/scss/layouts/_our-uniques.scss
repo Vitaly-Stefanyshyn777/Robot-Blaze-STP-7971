@@ -1,4 +1,9 @@
+.unique {
+  font-family: "Aldrich", sans-serif;
+}
+
 .uniques_title {
+  font-family: "Afacad", sans-serif;
   color: #fff;
   @include font(14, 18.67);
   @include media(desktop) {
