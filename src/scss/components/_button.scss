@@ -87,6 +87,7 @@
   min-width: 15px;
   height: 30px;
   fill: transparent;
+  margin-bottom: 2em;
   stroke: $_light_text_color;
   @include media(desktop) {
     min-width: 24px;
@@ -144,5 +145,17 @@
   @include media(desktop) {
     width: 24px;
     height: 24px;
+  }
+}
+
+review-svg-v {
+  min-width: 15px;
+  height: 30px;
+  fill: transparent;
+  margin-bottom: 2em;
+  stroke: $_light_text_color;
+  @include media(desktop) {
+    min-width: 24px;
+    height: 48px;
   }
 }
