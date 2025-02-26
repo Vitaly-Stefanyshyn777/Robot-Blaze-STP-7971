@@ -73,7 +73,6 @@
 @use "sass:math";
 @import "./breakpoints";
 
-// Єдиний варіант міксина media
 @mixin media($_screen) {
   @if $_screen == mobile {
     @media screen and (min-width: $mobile) {
@@ -98,7 +97,6 @@
   }
 }
 
-// Єдиний варіант міксина font
 @mixin font($_fsz, $_lnh) {
   font-size: #{$_fsz}px;
   $result: math.div($_lnh, $_fsz);

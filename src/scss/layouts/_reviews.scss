@@ -1,401 +1,3 @@
-// .reviews-section {
-//   margin-bottom: 70px;
-//   scroll-margin-top: 80px;
-//   @include media(desktop) {
-//     margin-bottom: 40px;
-//     scroll-margin-top: 30px;
-//   }
-// }
-
-// .reviews-container {
-//   position: relative;
-//   @include media(desktop) {
-//     height: auto;
-//     padding-top: 130px;
-//     padding-bottom: 100px;
-//     // max-width: 1079px;
-
-//     // background: linear-gradient(180deg, #e5bb4a 0%, #007670 50%, #e5bb4a 100%);
-//   }
-// }
-
-// .slide-box {
-//   display: flex;
-//   flex-direction: column;
-//   // роблять відступ у середені блоків не забути
-//   // justify-content: center; /* Центрує вміст всередині */
-//   align-items: center; /* Вирівнює по центру горизонтально */
-//   gap: 12px; /* Робить рівномірні відступи між елементами */
-//   // width: auto;
-//   max-width: 238px;
-
-//   // height: 203px;
-//   height: 241px;
-//   border-radius: 10px;
-//   background: rgba(17, 89, 107, 0.5);
-//   padding: 20px; /* Додає загальні відступи */
-//   border-radius: 20px;
-//   @include media(desktop) {
-//     border-radius: 20px;
-//     width: 289px;
-//     // height: 317px;
-//     background: rgba(17, 89, 107, 0.5);
-//     padding: 24px; /* Трохи більше відступів для desktop */
-//     border-radius: 20px;
-
-//     // width: 189px;
-//     // height: 241px;
-//   }
-// }
-
-// // 🔹 ВАРІАНТ 2: Збільшити висоту блоку
-
-// // .slide-box {
-// //   display: flex;
-// //   flex-direction: column;
-// //   justify-content: space-between;
-// //   align-items: center;
-// //   gap: 12px;
-
-// //   max-width: 258px;
-// //   height: auto; /* Динамічна висота */
-// //   min-height: 250px; /* Мінімальна висота */
-// //   padding: 20px;
-// //   border-radius: 10px;
-// //   background: rgba(17, 89, 107, 0.5);
-
-// //   @include media(mobile) {
-// //     min-height: 300px; /* Більша висота для мобільних */
-// //   }
-
-// //   @include media(desktop) {
-// //     border-radius: 20px;
-// //     width: 289px;
-// //     height: 235px;
-// //   }
-// // }
-
-// .mobile-style {
-//   display: flex;
-//   margin-bottom: 10px;
-// }
-
-// .desktop-style {
-//   display: flex;
-//   gap: 47px;
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
-
-// .desktop-style .swiper-slide-v {
-//   display: block;
-//   width: auto;
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// .swiper-slide-v {
-//   flex-shrink: 0;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 12px;
-//   max-width: 238px;
-//   height: 241px;
-//   border-radius: 10px;
-//   // background: rgba(17, 89, 107, 0.5);
-//   padding: 20px;
-//   border-radius: 20px;
-//   @include media(desktop) {
-//     // display: block;
-//     // width: auto;
-//     // display: flex;
-//     // flex-wrap: wrap;
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
-
-// .reviews-card-box {
-//   display: flex;
-//   align-items: center;
-//   // gap: 47px;
-//   line-height: 1.2em;
-// }
-
-// .reviews-card-theme {
-//   // font-weight: 500;
-//   // font-weight: 400;
-//   // font-size: 30px;
-//   // text-align: center;
-
-//   font-weight: 400;
-//   font-size: 14px;
-//   text-align: center;
-//   color: #fff;
-//   @include media(desktop) {
-//     font-weight: 400;
-//     font-size: 20px;
-//     text-align: center;
-//     color: #fff;
-//   }
-// }
-
-// .reviews-card-img {
-//   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-//   border-radius: 100%;
-// }
-
-// .review-nav {
-//   position: absolute; /* Виймаємо з потоку */
-//   top: 50%; /* 50% від висоти батьківського блоку */
-//   left: 0;
-//   right: 0;
-//   transform: translateY(-50%); /* Підтягуємо вгору на половину власної висоти */
-
-//   display: flex;
-//   justify-content: space-between; /* Одна кнопка ліворуч, інша праворуч */
-//   align-items: center;
-//   z-index: 10;
-//   @include media(desktop) {
-//     display: none;
-//   }
-// }
-
-// .reviews-stars {
-//   font-weight: 400;
-//   font-size: 16px;
-//   letter-spacing: 0.36em;
-//   text-align: center;
-//   color: #fff;
-//   margin-bottom: 8px; /* Додає відступ між зірками і текстом */
-//   @include media(desktop) {
-//     font-weight: 400;
-//     font-size: 30px;
-//     letter-spacing: 0.36em;
-//     text-align: center;
-//     color: #fff;
-//   }
-// }
-// // reviews-card-theme
-
-// // font-weight: 400;
-// // font-size: 30px;
-// // text-align: center;
-// // color: #fff;
-
-// .reviews-card-text {
-//   // max-width: 80%; /* Щоб текст не займав всю ширину */
-//   margin: 0 auto; /* Центрує текст */
-//   // font-weight: 400;
-//   // font-size: 14px;
-//   text-align: center;
-//   overflow-y: auto; /* Увімкнення вертикального скролу */
-//   // color: #fff;
-//   padding: 0 11px;
-
-//   @include media(desktop) {
-//     // font-size: 20px;
-//     // max-width: 60%;
-//     text-align: center;
-//     // padding: 0 30px;
-//   }
-// }
-// .swiper-reviews {
-//   position: relative;
-//   /* Решта ваших стилів (width, margin, etc.) */
-// }
-
-// // инести стрілки ще далі
-// #reviews-btn-prev {
-//   margin-left: -10px;
-// }
-// #reviews-btn-next {
-//   margin-right: -10px;
-// }
-
-// .swiper-wrapper-reviews {
-//   @include media(desktop) {
-//     display: flex;
-//     align-items: center;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     gap: 50px;
-//   }
-// }
-
-// .reviews-section {
-//   margin-bottom: 70px;
-//   scroll-margin-top: 80px;
-//   @include media(desktop) {
-//     margin-bottom: 40px;
-//     scroll-margin-top: 30px;
-//   }
-// }
-
-// .reviews-container {
-//   position: relative;
-//   @include media(desktop) {
-//     height: auto;
-//     padding-top: 130px;
-//     padding-bottom: 100px;
-//   }
-// }
-
-// .slide-box {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 12px;
-//   max-width: 238px;
-
-//   height: 241px;
-//   border-radius: 10px;
-//   background: rgba(17, 89, 107, 0.5);
-//   padding: 20px;
-//   border-radius: 20px;
-//   @include media(desktop) {
-//     border-radius: 20px;
-//     width: 289px;
-//     height: 317px;
-//     background: rgba(17, 89, 107, 0.5);
-//     padding: 24px;
-//     border-radius: 20px;
-
-//     width: 189px;
-//     height: 241px;
-//   }
-// }
-
-// .mobile-style {
-//   display: flex;
-//   margin-bottom: 10px;
-// }
-
-// .desktop-style {
-//   display: flex;
-//   gap: 47px;
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
-
-// .desktop-style .swiper-slide-v {
-//   display: block;
-//   width: auto;
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// .swiper-slide-v {
-//   flex-shrink: 0;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 12px;
-//   max-width: 238px;
-//   // height: 241px;
-//   border-radius: 10px;
-
-//   padding: 20px;
-//   border-radius: 20px;
-//   @include media(desktop) {
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
-
-// .reviews-card-box {
-//   display: flex;
-//   align-items: center;
-
-//   line-height: 1.2em;
-// }
-
-// .reviews-card-theme {
-//   font-weight: 400;
-//   font-size: 20px;
-//   text-align: center;
-//   color: #fff;
-//   @include media(desktop) {
-//     font-weight: 400;
-//     font-size: 30px;
-//     text-align: center;
-//     color: #fff;
-//   }
-// }
-
-// .reviews-card-img {
-//   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-//   border-radius: 100%;
-// }
-
-// .review-nav {
-//   position: absolute;
-//   top: 50%;
-//   left: 0;
-//   right: 0;
-//   transform: translateY(-50%);
-
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   z-index: 10;
-//   @include media(desktop) {
-//     display: none;
-//   }
-// }
-
-// .reviews-stars {
-//   font-weight: 400;
-//   font-size: 16px;
-//   letter-spacing: 0.36em;
-//   text-align: center;
-//   color: #fff;
-//   margin-bottom: 8px;
-//   @include media(desktop) {
-//     font-weight: 400;
-//     font-size: 30px;
-//     letter-spacing: 0.36em;
-//     text-align: center;
-//     color: #fff;
-//   }
-// }
-
-// .reviews-card-text {
-//   margin: 0 auto;
-
-//   text-align: center;
-//   overflow-y: auto;
-
-//   padding: 0 11px;
-
-//   @include media(desktop) {
-//     text-align: center;
-//   }
-// }
-// .swiper-reviews {
-//   position: relative;
-// }
-// #reviews-btn-prev {
-//   margin-left: -10px;
-// }
-// #reviews-btn-next {
-//   margin-right: -10px;
-// }
-
-// .swiper-wrapper-reviews {
-//   @include media(desktop) {
-//     display: flex;
-//     align-items: center;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     gap: 50px;
-//   }
-// }
-
-// майже готовий код
-
 .reviews-section {
   margin-bottom: 50px;
   scroll-margin-top: 80px;
@@ -412,8 +14,6 @@
     padding-top: 130px;
     padding-bottom: 100px;
     max-width: 1079px;
-
-    // background: linear-gradient(180deg, #e5bb4a 0%, #007670 50%, #e5bb4a 100%);
   }
 }
 
@@ -432,45 +32,12 @@
   border-radius: 20px;
   @include media(desktop) {
     border-radius: 20px;
-    // max-width: 289px;
     width: 289px;
-    // height: 317px;
     background: rgba(17, 89, 107, 0.5);
-    // padding: 24px; /* Трохи більше відступів для desktop */
     border-radius: 20px;
     height: 317px;
-
-    // width: 189px;
-    // height: 241px;
   }
 }
-
-// 🔹 ВАРІАНТ 2: Збільшити висоту блоку
-
-// .slide-box {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-items: center;
-//   gap: 12px;
-
-//   max-width: 258px;
-//   height: auto; /* Динамічна висота */
-//   min-height: 250px; /* Мінімальна висота */
-//   padding: 20px;
-//   border-radius: 10px;
-//   background: rgba(17, 89, 107, 0.5);
-
-//   @include media(mobile) {
-//     min-height: 300px; /* Більша висота для мобільних */
-//   }
-
-//   @include media(desktop) {
-//     border-radius: 20px;
-//     width: 289px;
-//     height: 235px;
-//   }
-// }
 
 .mobile-style {
   display: flex;
@@ -482,7 +49,6 @@
   gap: 47px;
   flex-wrap: wrap;
   justify-content: center;
-  // align-items: stretch; // Це допоможе блокам розширюватися по висоті
 }
 
 .desktop-style .swiper-slide-v {
@@ -500,7 +66,7 @@
   align-items: center;
   gap: 12px;
   max-width: 189px;
-  min-height: 100%; // Дозволяє блоку займати максимальну висоту контенту
+  min-height: 100%;
   border-radius: 10px;
   padding: 20px 20px 20px 45px;
   font-weight: 400;
@@ -508,10 +74,6 @@
   text-align: center;
   color: #fff;
   @include media(desktop) {
-    // display: block;
-    // width: auto;
-    // display: flex;
-    // flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     width: 289px;
@@ -526,15 +88,10 @@
 .reviews-card-box {
   display: flex;
   align-items: center;
-  // gap: 47px;
   line-height: 1.2em;
 }
 
 .reviews-card-theme {
-  // font-weight: 500;
-  // font-weight: 400;
-  // font-size: 30px;
-  // text-align: center;
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -554,14 +111,14 @@
 }
 
 .review-nav {
-  position: absolute; /* Виймаємо з потоку */
-  top: 50%; /* 50% від висоти батьківського блоку */
+  position: absolute;
+  top: 50%;
   left: 20px;
   right: 16px;
-  transform: translateY(-50%); /* Підтягуємо вгору на половину власної висоти */
+  transform: translateY(-50%);
   margin-top: 25px;
   display: flex;
-  justify-content: space-between; /* Одна кнопка ліворуч, інша праворуч */
+  justify-content: space-between;
   align-items: center;
   z-index: 10;
   @include media(desktop) {
@@ -575,7 +132,7 @@
   letter-spacing: 0.36em;
   text-align: center;
   color: #fff;
-  margin-bottom: 8px; /* Додає відступ між зірками і текстом */
+  margin-bottom: 8px;
   @include media(desktop) {
     font-weight: 400;
     font-size: 30px;
@@ -584,19 +141,12 @@
     color: #fff;
   }
 }
-// reviews-card-theme
-
-// font-weight: 400;
-// font-size: 30px;
-// text-align: center;
-// color: #fff;
 
 .reviews-card-text {
   letter-spacing: -0.02em;
   margin: 0 auto;
   text-align: center;
-  // padding: 0 11px;
-  overflow: hidden; // Прибираємо скрол
+  overflow: hidden;
 
   @include media(desktop) {
     text-align: center;
@@ -605,10 +155,8 @@
 }
 .swiper-reviews {
   position: relative;
-  /* Решта ваших стилів (width, margin, etc.) */
 }
 
-// инести стрілки ще далі
 #reviews-btn-prev {
   margin-left: -10px;
 }
@@ -625,230 +173,6 @@
     gap: 50px;
   }
 }
-
-// .reviews-section {
-//   margin-bottom: 70px;
-//   scroll-margin-top: 80px;
-//   @include media(desktop) {
-//     margin-bottom: 40px;
-//     scroll-margin-top: 30px;
-//   }
-// }
-
-// .reviews-container {
-//   position: relative;
-//   @include media(desktop) {
-//     height: auto;
-//     padding-top: 130px;
-//     padding-bottom: 100px;
-//     max-width: 1079px;
-
-//     // background: linear-gradient(180deg, #e5bb4a 0%, #007670 50%, #e5bb4a 100%);
-//   }
-// }
-
-// .slide-box {
-//   display: flex;
-//   flex-direction: column;
-//   // роблять відступ у середені блоків не забути
-//   justify-content: center; /* Центрує вміст всередині */
-//   align-items: center; /* Вирівнює по центру горизонтально */
-//   gap: 6px; /* Робить рівномірні відступи між елементами */
-//   // width: auto;
-//   max-width: 238px;
-
-//   // height: 203px;
-//   height: 241px;
-//   border-radius: 10px;
-//   background: rgba(17, 89, 107, 0.5);
-//   padding: 14px; /* Додає загальні відступи */
-//   border-radius: 20px;
-//   @include media(desktop) {
-//     border-radius: 20px;
-//     // max-width: 289px;
-//     width: 289px;
-//     // height: 317px;
-//     background: rgba(17, 89, 107, 0.5);
-//     padding: 24px; /* Трохи більше відступів для desktop */
-//     border-radius: 20px;
-//     height: 317px;
-
-//     // width: 189px;
-//     // height: 241px;
-//   }
-// }
-
-// // 🔹 ВАРІАНТ 2: Збільшити висоту блоку
-
-// // .slide-box {
-// //   display: flex;
-// //   flex-direction: column;
-// //   justify-content: space-between;
-// //   align-items: center;
-// //   gap: 12px;
-
-// //   max-width: 258px;
-// //   height: auto; /* Динамічна висота */
-// //   min-height: 250px; /* Мінімальна висота */
-// //   padding: 20px;
-// //   border-radius: 10px;
-// //   background: rgba(17, 89, 107, 0.5);
-
-// //   @include media(mobile) {
-// //     min-height: 300px; /* Більша висота для мобільних */
-// //   }
-
-// //   @include media(desktop) {
-// //     border-radius: 20px;
-// //     width: 289px;
-// //     height: 235px;
-// //   }
-// // }
-
-// .mobile-style {
-//   display: flex;
-//   margin-bottom: 10px;
-// }
-
-// .desktop-style {
-//   display: flex;
-//   gap: 47px;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   // align-items: stretch; // Це допоможе блокам розширюватися по висоті
-// }
-
-// .desktop-style .swiper-slide-v {
-//   display: block;
-//   width: auto;
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// .swiper-slide-v {
-//   flex-shrink: 0;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 12px;
-//   max-width: 238px;
-//   min-height: 100%; // Дозволяє блоку займати максимальну висоту контенту
-//   border-radius: 10px;
-//   padding: 20px;
-//   -radius: 20px;
-//   @include media(desktop) {
-//     // display: block;
-//     // width: auto;
-//     // display: flex;
-//     // flex-wrap: wrap;
-//     display: flex;
-//     flex-direction: column;
-//     width: 289px;
-//     height: 317px;
-//   }
-// }
-
-// .reviews-card-box {
-//   display: flex;
-//   align-items: center;
-//   // gap: 47px;
-//   line-height: 1.2em;
-// }
-
-// .reviews-card-theme {
-//   // font-weight: 500;
-//   // font-weight: 400;
-//   // font-size: 30px;
-//   // text-align: center;
-
-//   font-weight: 400;
-//   font-size: 20px;
-//   text-align: center;
-//   color: #fff;
-//   @include media(desktop) {
-//     font-weight: 400;
-//     font-size: 20px;
-//     text-align: center;
-//     color: #fff;
-//   }
-// }
-
-// .reviews-card-img {
-//   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-//   border-radius: 100%;
-// }
-
-// .review-nav {
-//   position: absolute; /* Виймаємо з потоку */
-//   top: 50%; /* 50% від висоти батьківського блоку */
-//   left: 0;
-//   right: 0;
-//   transform: translateY(-50%); /* Підтягуємо вгору на половину власної висоти */
-
-//   display: flex;
-//   justify-content: space-between; /* Одна кнопка ліворуч, інша праворуч */
-//   align-items: center;
-//   z-index: 10;
-//   @include media(desktop) {
-//     display: none;
-//   }
-// }
-
-// .reviews-stars {
-//   font-weight: 400;
-//   font-size: 16px;
-//   letter-spacing: 0.36em;
-//   text-align: center;
-//   color: #fff;
-//   margin-bottom: 8px; /* Додає відступ між зірками і текстом */
-//   @include media(desktop) {
-//     font-weight: 400;
-//     font-size: 30px;
-//     letter-spacing: 0.36em;
-//     text-align: center;
-//     color: #fff;
-//   }
-// }
-// // reviews-card-theme
-
-// // font-weight: 400;
-// // font-size: 30px;
-// // text-align: center;
-// // color: #fff;
-
-// .reviews-card-text {
-//   margin: 0 auto;
-//   text-align: center;
-//   padding: 0 11px;
-//   overflow: hidden; // Прибираємо скрол
-
-//   @include media(desktop) {
-//     text-align: center;
-//   }
-// }
-// .swiper-reviews {
-//   position: relative;
-//   /* Решта ваших стилів (width, margin, etc.) */
-// }
-
-// // инести стрілки ще далі
-// #reviews-btn-prev {
-//   margin-left: -10px;
-// }
-// #reviews-btn-next {
-//   margin-right: -10px;
-// }
-
-// .swiper-wrapper-reviews {
-//   @include media(desktop) {
-//     display: flex;
-//     align-items: center;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     gap: 50px;
-//   }
-// }
 
 .reviews-card-theme-n {
   @include media(desktop) {

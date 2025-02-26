@@ -1,20 +1,3 @@
-// .header-wraper {
-//   display: flex;
-//   align-items: center; // Вирівнюємо по вертикалі
-//   justify-content: space-between;
-//   padding-top: 24px;
-//   width: 100%;
-//   height: 54px;
-//   position: fixed;
-//   z-index: 100;
-
-//   @include media(desktop) {
-//     padding-top: 48px;
-//     justify-content: flex-start;
-//     width: 100%;
-//   }
-// }
-
 .header-wraper {
   margin-top: 20px;
   display: flex;
@@ -48,19 +31,15 @@
 
 .header-logo-wraper {
   display: flex;
-  align-items: center; // Додаємо вирівнювання
-  // margin-right: 20px; // Зменшуємо відступ, щоб лого не було далеко
+  align-items: center;
   height: 55px;
 }
 
 .header-logo {
-  // border-radius: 12px;
-  // width: 60px;
-  // height: 60px;
   margin-left: 27px;
 
   @include media(desktop) {
-    margin: 0px 79px 0px 39px; //відступ біля викіноки але потрібно гат використовувати
+    margin: 0px 79px 0px 39px;
   }
 }
 
@@ -68,10 +47,9 @@
   display: none;
 
   @include media(desktop) {
-    display: flex; // Змінюємо з block на flex
-    align-items: center; // Вирівнюємо елементи по вертикалі
+    display: flex;
+    align-items: center;
     height: 55px;
-    // padding: 16px 78px;
     padding: 16px 35px;
     border-radius: 100px;
     background: #034a5b;
@@ -83,8 +61,6 @@
 
 .header-list {
   display: flex;
-  // gap: 25px;
-  // gap: 38px;
   gap: 42px;
 }
 

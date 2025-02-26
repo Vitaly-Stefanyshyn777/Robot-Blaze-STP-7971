@@ -19,18 +19,13 @@
   position: absolute;
   right: -100%;
   top: 50px;
-  // width: 208px;
   padding: 16px 21px 10px 16px;
-  // background-color: $_hight_green_swiper;
-  // border-radius: 10px 0px 0px 10px;
   background: #034a5b;
   z-index: 999;
   opacity: 0;
   transition: left 500ms ease, opacity 500ms ease;
 
   border-radius: 0 0 28px 28px;
-  // width: 137px;
-  // height: 227px;
 }
 
 .backdrop.is-open .mob-wrap {
@@ -39,24 +34,12 @@
 }
 
 .mob-btn-close {
-  // position: absolute;
-  // top: 5px;
-  // right: 0;
-  // width: 30px;
-  // height: 30px;
-  // border: none;
-  // background-color: transparent;
-  // padding: 0;
-  // fill: #ffffff;
-  // stroke: transparent;
 }
 
 .mob-list {
   display: flex;
   flex-direction: column;
-  // align-items: end;
   gap: 16px;
-  // text-align: center;
 }
 
 .mob-link {

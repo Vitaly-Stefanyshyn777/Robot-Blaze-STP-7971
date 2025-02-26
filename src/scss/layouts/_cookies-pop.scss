@@ -1,129 +1,12 @@
-// .cookies-pop {
-//   padding: 60px 40px 40px;
-//   position: fixed;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   // background-color: $_secondary_bg_color;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// @include media(mobile) {
-//   .cookies-pop {
-//     padding: 12px 36px;
-//   }
-// }
-
-// .cookies-content {
-//   max-width: 1120px;
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .cookies-content h1,
-// .cookies-content p {
-//   font-family: "Open Sans", sans-serif;
-//   line-height: 1.36;
-//   margin-left: 0;
-//   margin-bottom: 0;
-// }
-
-// .cookies-content > h1 {
-//   font-size: 24px;
-//   font-weight: 400;
-//   margin-bottom: 16px;
-// }
-
-// @include media(mobile) {
-//   .cookies-content > h1 {
-//     font-size: 40px;
-//     margin-bottom: 20px;
-//   }
-// }
-
-// .cookies-content > p {
-//   font-size: 24px;
-//   font-weight: 300;
-//   margin-bottom: 32px;
-// }
-
-// .cookies-buttons {
-//   display: flex;
-//   gap: 12px;
-//   align-content: flex-end;
-//   flex-direction: column;
-//   align-items: flex-end;
-// }
-
-// @include media(mobile) {
-//   .cookies-buttons {
-//     // display: flex;
-//     // flex-direction: row-reverse;
-//     gap: 24px;
-//     justify-content: end;
-//   }
-// }
-
-// .cookies-buttons button {
-//   padding: 11px 31px;
-//   font-family: "Open Sans", sans-serif;
-//   font-size: 20px;
-//   line-height: 1.36;
-//   text-transform: uppercase;
-//   border-radius: 10px;
-//   border: none;
-// }
-
-// @include media(mobile) {
-//   .cookies-buttons button {
-//   }
-// }
-
-// .cookies-accept {
-//   // background-color: $_main_bg_color;
-// }
-// .cookies-decline {
-// }
 .cookies-pop {
-  // position: fixed;
-  // bottom: 0;
-  // left: 0;
-  // width: 100%;
-  // /* Приклад кольору фону */
-  // background: #145c6d;
-
-  // /* Закруглені верхні кути */
-  // border-top-left-radius: 30px;
-  // border-top-right-radius: 30px;
-
-  // /* Відступи навколо контенту */
-  // padding: 40px 20px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-  // z-index: 9999;
-
-  // padding: 60px 40px;
-
-  // @include media(mobile) {
-  //   padding: 60px 40px;
-  // }
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  /* Приклад кольору фону */
-  // background: #145c6d;
 
-  /* Закруглені верхні кути */
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 
-  /* Відступи навколо контенту */
-  // padding: 40px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,14 +18,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    /* Приклад кольору фону */
-    // background: #145c6d;
-
-    /* Закруглені верхні кути */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 
-    /* Відступи навколо контенту */
     padding: 1px 20px;
     display: flex;
     justify-content: center;
@@ -153,28 +31,6 @@
 }
 
 .cookies-content {
-  // max-width: 1200px;
-  // // width: 100%;
-  // /*
-  //   Головне: робимо два блоки:
-  //   1) Текст (заголовок + параграф)
-  //   2) Блок кнопок (вертикально)
-  //   На десктопі вони розташовуються в ряд (зліва текст, справа кнопки).
-  // */
-  // // display: flex;
-  // // flex-direction: row;
-  // // justify-content: space-between;
-  // // align-items: flex-start; /* Текст зверху, кнопки теж від верхньої лінії */
-  // // gap: 24px;
-  // // padding: 0px 3em 0 3em;
-  // // border-radius: 30px 30px 0 0;
-  // // width: 1200px;
-  // // height: 218px;
-
-  // flex-direction: column;
-  // align-items: flex-start;
-  // gap: 20px;
-
   border-radius: 29px 29px 0 0;
   width: 320px;
   height: 201px;
@@ -186,52 +42,28 @@
   margin: 20px;
 
   @include media(desktop) {
-    /* На мобільних робимо все в одну колонку */
-
     max-width: 1200px;
-    // width: 100%;
-    /* 
-    Головне: робимо два блоки:
-    1) Текст (заголовок + параграф)
-    2) Блок кнопок (вертикально)
-    На десктопі вони розташовуються в ряд (зліва текст, справа кнопки).
-  */
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // align-items: flex-start; /* Текст зверху, кнопки теж від верхньої лінії */
     max-width: 1200px;
     gap: 24px;
-    /* padding: 0px 3em 0 3em; */
+
     margin: 20px;
-    // padding: 20px;
+
     border-radius: 30px 30px 0 0;
     width: 1200px;
     height: 218px;
   }
 }
 
-/* Обгортка для заголовка і тексту */
 .cookies-text {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-/* Заголовок */
-
 .cookies-text h1 {
   font-size: 40px;
 
-  // margin: 0;
-  // font-family: "Open Sans", sans-serif;
-  // font-weight: 400;
-  // line-height: 1.2;
-  // color: #fff;
-  // font-size: 24px;
-
   @include media(desktop) {
-    // font-size: 40px;
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -240,21 +72,10 @@
     font-size: 24px;
   }
 }
-
-/* Параграф */
 .cookies-text p {
-  // margin: 0;
-  // font-family: "Open Sans", sans-serif;
-  // font-weight: 300;
-  // color: #fff;
-  // font-size: 16px;
-  // line-height: 1.4;
-
   font-size: 24px;
 
   @include media(desktop) {
-    // font-size: 24px;
-
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
@@ -264,35 +85,15 @@
   }
 }
 
-/* Блок кнопок (вертикальна колонка) */
 .cookies-buttons {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-end; /* Вирівнюємо кнопки по правому краю */
-  // gap: 16px;
-  // display: flex;
-  // flex-direction: column-reverse;
-  // gap: 16px;
-  // flex-wrap: nowrap;
-
-  // display: flex;
-  // flex-direction: column;
-  // gap: 30px;
-  // /* flex-wrap: nowrap; */
-  // margin-top: 30px;
-
   align-items: flex-end;
 
-  /* На мобільних теж можна залишити вертикально.
-     Якщо хочеш, щоб на мобільних вони розтягувалися:
-     align-items: stretch; 
-     або align-items: flex-start; */
   align-items: flex-end;
 
   display: flex;
-  // flex-direction: column;
+
   gap: 30px;
-  /* flex-wrap: nowrap; */
+
   margin-top: 30px;
 
   @include media(desktop) {
@@ -301,33 +102,15 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    /* flex-wrap: nowrap; */
     margin-top: 30px;
   }
 }
 
 .cookies-buttons button {
-  // padding: 14px 28px;
-  // font-family: "Open Sans", sans-serif;
-  // // font-size: 16px;
-  // line-height: 1.36;
-  // text-transform: uppercase;
-  // // border-radius: 10px;
-  // // border: none;
-  // cursor: pointer;
-  // font-weight: 400;
-  // font-size: 24px;
-  // text-align: center;
-
   @include media(desktop) {
-    // font-size: 20px;
-
     padding: 14px 28px;
     font-family: "Open Sans", sans-serif;
-    // font-size: 16px;
     line-height: 1.36;
-    // border-radius: 10px;
-    // border: none;
     cursor: pointer;
     font-weight: 400;
     font-size: 24px;
@@ -335,7 +118,6 @@
   }
 }
 
-/* Приклад стилів кнопок */
 .cookies-accept {
   border: none;
   color: #fff;
@@ -363,8 +145,6 @@
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.27);
   border-radius: 26px;
-  // width: 286px;
-  // height: 60px;
   border-radius: 26px;
   width: 149px;
   height: 34px;
@@ -379,13 +159,6 @@
 }
 
 .cookie-v {
-  // flex-direction: column;
-  // align-items: flex-start;
-  // gap: 30px;
-  // font-weight: 400;
-  // font-size: 50px;
-  // // text-align: center;
-  // color: #fff;
   font-weight: 400;
   font-size: 20px;
   text-align: center;
@@ -397,18 +170,11 @@
     gap: 30px;
     font-weight: 400;
     font-size: 50px;
-    // text-align: center;
     color: #fff;
     text-align: left;
   }
 }
 .cookie {
-  // flex-direction: column;
-  // align-items: flex-start;
-  // gap: 20px;
-  // font-weight: 500;
-  // font-size: 28px;
-  // color: #fff;
   font-weight: 500;
   font-size: 14px;
   color: #fff;
@@ -423,13 +189,6 @@
 }
 
 .cookie-b {
-  // display: flex;
-  // justify-content: flex-start;
-  // align-content: flex-start;
-  // flex-direction: column;
-  // width: 700px;
-  // gap: 39px;
-
   @include media(desktop) {
     display: flex;
     justify-content: flex-start;
@@ -440,9 +199,6 @@
   }
 }
 .fhj {
-  // display: flex;
-  // justify-content: space-between;
-
   @include media(desktop) {
     display: flex;
     justify-content: space-between;
@@ -450,9 +206,9 @@
 }
 
 .cookies-wrapper-v {
-  width: 1200px; /* Фіксована ширина */
+  width: 1200px;
   display: flex;
   justify-content: center;
-  background: #145c6d; /* Центрує контент */
+  background: #145c6d;
   border-radius: 30px 30px 0 0;
 }
