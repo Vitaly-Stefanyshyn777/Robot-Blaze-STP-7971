@@ -397,7 +397,7 @@
 // майже готовий код
 
 .reviews-section {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   scroll-margin-top: 80px;
   @include media(desktop) {
     margin-bottom: 40px;
@@ -420,18 +420,15 @@
 .slide-box {
   display: flex;
   flex-direction: column;
-  // роблять відступ у середені блоків не забути
-  justify-content: center; /* Центрує вміст всередині */
-  align-items: center; /* Вирівнює по центру горизонтально */
-  gap: 6px; /* Робить рівномірні відступи між елементами */
-  // width: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
   max-width: 238px;
-
-  // height: 203px;
+  justify-content: space-evenly;
   height: 241px;
   border-radius: 10px;
   background: rgba(17, 89, 107, 0.5);
-  padding: 14px; /* Додає загальні відступи */
+  padding: 15px;
   border-radius: 20px;
   @include media(desktop) {
     border-radius: 20px;
@@ -538,14 +535,14 @@
   // font-weight: 400;
   // font-size: 30px;
   // text-align: center;
-
+  font-family: "Aldrich", sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   color: #fff;
   @include media(desktop) {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     color: #fff;
   }
@@ -595,6 +592,7 @@
 // color: #fff;
 
 .reviews-card-text {
+  letter-spacing: -0.02em;
   margin: 0 auto;
   text-align: center;
   // padding: 0 11px;
@@ -602,6 +600,7 @@
 
   @include media(desktop) {
     text-align: center;
+    letter-spacing: -0.02em;
   }
 }
 .swiper-reviews {
