@@ -849,3 +849,15 @@
 //     gap: 50px;
 //   }
 // }
+
+.reviews-card-theme-n {
+  @include media(desktop) {
+    margin-bottom: -25px;
+  }
+}
+
+.reviews-card-theme-m {
+  @include media(desktop) {
+    margin-bottom: -12px;
+  }
+}
